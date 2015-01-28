@@ -78,48 +78,41 @@
 		{
 			"name": "Client-Side Javascript",
 			"level": "Excellent",
-			"keywords": ["HTML", "HTML5", "CSS", "CSS3", "Bootstrap", "NPM", "Bower", "Gulp", "Javascript", "ES6", "Web Components", "Jasmine", "Underscore", "Backbone", "Marionette", "Mixpanel", "Google Analytics"],
+			"keywords": ["HTML5", "CSS3", "SASS", "Bootstrap", "Javascript", "ES6", "Web Components", "Underscore", "Backbone", "Marionette", "React"],
 			"aliases": ["Client-Side Development"]
 		},
 		{
 			"name": "Behavior Driven Development",
-			"keywords": ["tests", "testing", "unit testing", "end-to-end testing", "e2e", "Jasmine", "Mocha", "Karma", "BenchmarkJS", "Selenium", "WebDriver", "NightWatch", "Protractor"],
+			"keywords": ["unit testing", "e2e", "Jasmine", "Mocha", "Karma", "BenchmarkJS", "Selenium", "NightWatch"],
 			"level": "Proficient"
 		},
 		{
 			"name": "Browser Performance Optimization",
 			"level": "Excellent",
-			"keywords": ["timeline", "devTools", "optiimzation", "SpeedTest"],
+			"keywords": ["Chrome Timeline", "Dev Tools", "Speed Test"],
 		},
 		{
 			"name": "Back-End Development",
 			"level": "Proficient",
-			"keywords": ["Node", "PHP", "PHP5", "SQL", "mySQL", "REST", "RESTful"],
-			"aliases": [
-				"Server-Side Development"
-			]
+			"keywords": ["PHP5", "Node.js", "REST"],
+			"aliases": ["Server-Side Development"]
 		},
 		{
 			"name": "User Interfaces",
 			"level": "Excellent",
-			"keywords": ["mockups", "wireframing", "responsive design", "HTML", "HTML5", "CSS", "CSS3", "Bootstrap"],
+			"keywords": ["responsive design", "HTML5", "CSS3", "SASS", "Bootstrap"],
 			"aliases": ["UI"]
 		},
 		{
 			"name": "User Experience",
 			"level": "Excellent",
-			"keywords": ["mockups", "wireframing", "Mixpanel", "Google Analytics"],
+			"keywords": ["mockups", "wireframing", "Mixpanel"],
 			"aliases": ["UX"]
-		},
-		{
-			"name": "Web Design",
-			"level": "Excellent",
-			"keywords": ["HTML", "HTML5", "CSS", "CSS3", "Bootstrap"]
 		},
 		{
 			"name": "API Integration",
 			"level": "Excellent",
-			"keywords": ["REST", "RESTful", "API"],
+			"keywords": ["RESTful", "API"],
 			"aliases": ["APIs"]
 		},
 		{
@@ -141,24 +134,20 @@
 	],
 	"interests": [
 		{
-			"name": "3D Printing",
-			"keywords": ["3d printing", "reprap"]
-		},
-		{
-			"name": "Architecture & Design",
+			"name": "Architecture",
 			"keywords": ["architecture", "urbanism", "design"]
 		},
 		{
 			"name": "Skiing",
-			"keywords": ["skiing", "snowsports"]
+			"keywords": ["downhill", "backcountry"]
 		},
 		{
 			"name": "Rock Climbing",
-			"keywords": ["rock climbing", "hiking", "backpacking"]
+			"keywords": ["hiking", "backpacking"]
 		},
 		{
 			"name": "Movies",
-			"keywords": ["movies", "film", "tv"]
+			"keywords": ["Sci Fi", "Comedy", "Drama"]
 		},
 	],
 }

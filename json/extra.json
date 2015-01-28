@@ -53,6 +53,11 @@
 			"level": "Excellent"
 		},
 		{
+			"name": "Bower",
+			"categories": ["runner"],
+			"level": "Excellent"
+		},
+		{
 			"name": "Browserify",
 			"categories": ["library"],
 			"level": "Proficient"
@@ -177,6 +182,11 @@
 			"name": "PHP5",
 			"aliases": ["PHP"],
 			"categories": ["backend"],
+			"level": "Familiar"
+		},
+		{
+			"name": "React",
+			"categories": ["library"],
 			"level": "Familiar"
 		},
 		{
