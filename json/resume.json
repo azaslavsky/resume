@@ -6,12 +6,13 @@
 		"email": "alex.zaslavsky.1990@gmail.com",
 		"phone": "510.303.4126",
 		"website": "https://azaslavsky.github.io/resume",
+		"summary": "I'm a Front End Designer and Developer currently looking for a position that will allow me to grow and contribute on a technical, UI, and UX design level.  I'm eager to work on projects that will allow me to synthesize my design and coding skills to make something truly fantastic.",
 		"loctation": {
 			"address": "3504 Northwood Dr.",
 			"postalCode": "94546",
 			"city": "Berkeley",
 			"countryCode": "US",
-			"region": "CA",
+			"region": "CA"
 		},
 		"profiles": [
 			{
@@ -36,7 +37,7 @@
 				"username": "azaslavsky",
 				"url": "http://codepen.io/azaslavsky/"
 			}
-		],
+		]
 	},
 	"education": [
 		{
@@ -55,22 +56,24 @@
 			"website": "app.critica.io",
 			"startDate": "2013-11-15",
 			"endDate": "2015-01-15",
-			"summary": "I built the entire front end for Critica, a consumer and education focused discussion app.  I was responsible for the entire user facing portion of the product, including UI/UX design, client-side development, and integration with in-house and third party back-end APIs.",
+			"summary": "I co-founded Critica, a consumer and education focused discussion app, with two friends in 2013.  I was responsible for the entire user facing portion of the product, including UI/UX design, client-side Javascript, and integration with in-house and third party back-end APIs.",
 			"highlights": [
-				"Skills: Client-Side Development, Server-Side Development, UI, UX, Design, API Integration, SQL Databases",
-				"Stack: HTML5, CSS3, Javascript, RequireJS, jQuery, Underscore, Backbone, Marionette, Handlebars, Modernizr, Node.js, Gulp, & Chrome Extensions"
+				"Website: app.critica.io",
+				"Skills: Client-Side Development, UI, UX, Design, API Integration",
+				"Stack: Git, HTML5, CSS3, Javascript, RequireJS, jQuery, Underscore, Backbone, Marionette, Handlebars, Modernizr, Node.js, Gulp, & Chrome Extensions"
 			]
 		},
 		{
 			"company": "Safe Transportation Research and Education Center",
 			"position": "Web Developer",
 			"website": "tims.berkeley.edu",
-			"startDate": "2013-01-01",
-			"endDate": "2014-12-31",
-			"summary": "At SafeTREC, I worked as part of the small team that is building the TIMS (Transport Injury Mapping System) suite of traffic safety applications. My contributions focused on web design, back end database integration via PHP, and the development of search and query algorithms.",
+			"startDate": "2010-01-10",
+			"endDate": "2013-12-31",
+			"summary": "At SafeTREC, I was part of the small team that built the TIMS (Transport Injury Mapping System) suite of traffic safety applications. My contributions focused on web design, back end database integration via PHP, and the development of search and query algorithms.",
 			"highlights": [
-				"Skills: Client-Side Development, UI, UX, Design, API Integration",
-				"Stack: PHP5, CSS3, HTML5, Javascript, jQuery, Google Maps, & Leaflet"
+				"Website: tims.berkeley.edu",
+				"Skills: Client-Side Development, Server-Side Development, UI, UX, Design, API Integration, SQL Databases",
+				"Stack: Git, PHP5, CSS3, HTML5, Javascript, jQuery, Google Maps, & Leaflet"
 			]
 		}
 	],
@@ -89,7 +92,7 @@
 		{
 			"name": "Browser Performance Optimization",
 			"level": "Excellent",
-			"keywords": ["Chrome Timeline", "Dev Tools", "Speed Test"],
+			"keywords": ["Chrome Timeline", "Dev Tools", "Speed Test"]
 		},
 		{
 			"name": "Back-End Development",
@@ -148,6 +151,6 @@
 		{
 			"name": "Movies",
 			"keywords": ["Sci Fi", "Comedy", "Drama"]
-		},
-	],
+		}
+	]
 }

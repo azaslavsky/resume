@@ -54,7 +54,7 @@
 		},
 		{
 			"name": "Bower",
-			"categories": ["runner"],
+			"categories": ["tool"],
 			"level": "Excellent"
 		},
 		{
@@ -69,7 +69,7 @@
 		},
 		{
 			"name": "Compass",
-			"categories": ["design", "library", "runner"],
+			"categories": ["design", "library", "tool"],
 			"level": "Proficient"
 		},
 		{
@@ -85,14 +85,24 @@
 			"level": "Proficient"
 		},
 		{
+			"name": "Flux",
+			"categories": ["library"],
+			"level": "Familiar"
+		},
+		{
 			"name": "Google Maps",
 			"aliases": ["GMaps", "Google Maps V3", "GMaps V3"],
 			"categories": ["library"],
 			"level": "Excellent"
 		},
 		{
+			"name": "Git",
+			"categories": ["tool"],
+			"level": "Proficient"
+		},
+		{
 			"name": "Gulp",
-			"categories": ["runner"],
+			"categories": ["tool"],
 			"level": "Excellent"
 		},
 		{
@@ -126,7 +136,7 @@
 		{
 			"name": "Karma",
 			"aliases": ["Karma Runner"],
-			"categories": ["testing", "runner"],
+			"categories": ["testing", "tool"],
 			"level": "Proficient"
 		},
 		{
@@ -203,7 +213,7 @@
 		{
 			"name": "SASS",
 			"aliases": ["SCSS", "CSS Preprocessor"],
-			"categories": ["design", "library", "runner"],
+			"categories": ["design", "library", "tool"],
 			"level": "Excellent"
 		},
 		{
