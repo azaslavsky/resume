@@ -1,0 +1,218 @@
+{
+	"projects": [
+		{
+			"name": "backbone-hashMate",
+			"website": "https://github.com/azaslavsky/backbone-hashMate",
+			"summary": "Like jQuery BBQ, but for Backbone. HashMate extends Backbone.History to store and respond to information contained in the URL's hash fragment. Useful for state management, referral handling, SEO and more.",
+			"highlights": [
+				"Skills: Client-Side Development, API Integration",
+				"Stack: Javascript, Underscore, Backbone"
+			]
+		},
+		{
+			"name": "domJSON",
+			"website": "https://github.com/azaslavsky/domJSON",
+			"summary": "Converts DOM trees into compact JSON objects, and vice versa, as fast as possible.",
+			"highlights": [
+				"Skills: Client-Side Development",
+				"Stack: Javascript"
+			]
+		},
+		{
+			"name": "TextStack",
+			"website": "https://github.com/azaslavsky/TestStack",
+			"summary": "A simple undo history script for DOM text fields.",
+			"highlights": [
+				"Skills: Client-Side Development",
+				"Stack: Javascript"
+			]
+		},
+	],
+	"technologies": [
+		{
+			"name": "HTML5",
+			"aliases": ["HTML"],
+			"categories": ["standard"],
+			"level": "Excellent"
+		},
+		{
+			"name": "Backbone",
+			"aliases": ["ExoSkeleton"],
+			"categories": ["library"],
+			"level": "Excellent"
+		},
+		{
+			"name": "BenchmarkJS",
+			"aliases": ["Benchmark"],
+			"categories": ["testing"],
+			"level": "Familiar"
+		},
+		{
+			"name": "Bootstrap",
+			"categories": ["library"],
+			"level": "Excellent"
+		},
+		{
+			"name": "Browserify",
+			"categories": ["library"],
+			"level": "Proficient"
+		},
+		{
+			"name": "Chrome Extensions",
+			"categories": ["standard"],
+			"level": "Excellent"
+		},
+		{
+			"name": "Compass",
+			"categories": ["design", "library", "runner"],
+			"level": "Proficient"
+		},
+		{
+			"name": "CSS3",
+			"aliases": ["CSS"],
+			"categories": ["design", "standard"],
+			"level": "Excellent"
+		},
+		{
+			"name": "ES6",
+			"aliases": ["ECMAScript 6"],
+			"categories": ["standard"],
+			"level": "Proficient"
+		},
+		{
+			"name": "Google Maps",
+			"aliases": ["GMaps", "Google Maps V3", "GMaps V3"],
+			"categories": ["library"],
+			"level": "Excellent"
+		},
+		{
+			"name": "Gulp",
+			"categories": ["runner"],
+			"level": "Excellent"
+		},
+		{
+			"name": "Handlebars",
+			"categories": ["library"],
+			"level": "Proficient"
+		},
+		{
+			"name": "Illustrator",
+			"aliases": ["Adboce Illustrator"],
+			"categories": ["design"],
+			"level": "Excellent"
+		},
+		{
+			"name": "Jasmine",
+			"categories": ["library", "testing"],
+			"level": "Excellent"
+		},
+		{
+			"name": "Javascript",
+			"aliases": ["JS"],
+			"categories": ["standard"],
+			"level": "Excellent"
+		},
+		{
+			"name": "jQuery",
+			"aliases": ["Zepto"],
+			"categories": ["library"],
+			"level": "Excellent"
+		},
+		{
+			"name": "Karma",
+			"aliases": ["Karma Runner"],
+			"categories": ["testing", "runner"],
+			"level": "Proficient"
+		},
+		{
+			"name": "Leaflet",
+			"categories": ["library"],
+			"level": "Familiar"
+		},
+		{
+			"name": "Marionette",
+			"categories": ["library"],
+			"level": "Excellent"
+		},
+		{
+			"name": "Mixpanel",
+			"aliases": ["Analytics"],
+			"categories": ["library"],
+			"level": "Proficient"
+		},
+		{
+			"name": "Mocha",
+			"categories": ["library", "testing"],
+			"level": "Familiar"
+		},
+		{
+			"name": "Modernizr",
+			"categories": ["library"],
+			"level": "Excellent"
+		},
+		{
+			"name": "mySQL",
+			"aliases": ["SQL"],
+			"categories": ["standard"],
+			"level": "Proficient"
+		},
+		{
+			"name": "Nightwatch",
+			"categories": ["library", "testing"],
+			"level": "Familiar"
+		},
+		{
+			"name": "Node.js",
+			"aliases": ["Node"],
+			"categories": ["backend"],
+			"level": "Familiar"
+		},
+		{
+			"name": "Photoshop",
+			"aliases": ["Adobe Photoshop"],
+			"categories": ["design"],
+			"level": "Proficient"
+		},
+		{
+			"name": "PHP5",
+			"aliases": ["PHP"],
+			"categories": ["backend"],
+			"level": "Familiar"
+		},
+		{
+			"name": "REST",
+			"aliases": ["RESTful", "REST API", "RESTful API"],
+			"categories": ["standard"],
+			"level": "Proficient"
+		},
+		{
+			"name": "RequireJS",
+			"categories": ["library"],
+			"level": "Excellent"
+		},
+		{
+			"name": "SASS",
+			"aliases": ["SCSS", "CSS Preprocessor"],
+			"categories": ["design", "library", "runner"],
+			"level": "Excellent"
+		},
+		{
+			"name": "Selenium",
+			"aliases": ["WebDriver"],
+			"categories": ["testing"],
+			"level": "Proficient"
+		},
+		{
+			"name": "Underscore",
+			"aliases": ["loDash"],
+			"categories": ["library"],
+			"level": "Excellent"
+		},
+		{
+			"name": "Web Components",
+			"aliases": ["Polymer"],
+			"categories": ["standard"],
+			"level": "Familiar"
+		}
+	]
+}

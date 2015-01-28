@@ -1,0 +1,164 @@
+{
+	"basics": {
+		"name": "Alex Zaslavsky",
+		"label": "Front End Designer and Developer",
+		"picture": "https://media.licdn.com/mpr/mpr/p/7/005/01d/3c8/33e4340.jpg",
+		"email": "alex.zaslavsky.1990@gmail.com",
+		"phone": "510.303.4126",
+		"website": "https://azaslavsky.github.io/resume",
+		"loctation": {
+			"address": "3504 Northwood Dr.",
+			"postalCode": "94546",
+			"city": "Berkeley",
+			"countryCode": "US",
+			"region": "CA",
+		},
+		"profiles": [
+			{
+				"network": "LinkedIn",
+				"username": "Alex Zaslavsky",
+				"url": "www.linkedin.com/in/ayzaslavsky"
+			},
+			{
+				"network": "Twitter",
+				"username": "alex__zaslavsky",
+				"url": "https://twitter.com/alex__zaslavsky"
+			},{
+				"network": "Github",
+				"username": "azaslavsky",
+				"url": "https://github.com/azaslavsky"
+			},{
+				"network": "StackOverflow",
+				"username": "AlexZ",
+				"url": "http://stackoverflow.com/users/2230156/alexz"
+			},{
+				"network": "Codepen",
+				"username": "azaslavsky",
+				"url": "http://codepen.io/azaslavsky/"
+			}
+		],
+	},
+	"education": [
+		{
+			"institution": "University of California, Berkeley",
+			"area": "Architecture",
+			"studyType": "Bachelor",
+			"startDate": "2008-08-25",
+			"endDate": "2012-12-20",
+			"gpa": "3.4"
+		}
+	],
+	"work": [
+		{
+			"company": "Critica",
+			"position": "Co-Founder",
+			"website": "app.critica.io",
+			"startDate": "2013-11-15",
+			"endDate": "2015-01-15",
+			"summary": "I built the entire front end for Critica, a consumer and education focused discussion app.  I was responsible for the entire user facing portion of the product, including UI/UX design, client-side development, and integration with in-house and third party back-end APIs.",
+			"highlights": [
+				"Skills: Client-Side Development, Server-Side Development, UI, UX, Design, API Integration, SQL Databases",
+				"Stack: HTML5, CSS3, Javascript, RequireJS, jQuery, Underscore, Backbone, Marionette, Handlebars, Modernizr, Node.js, Gulp, & Chrome Extensions"
+			]
+		},
+		{
+			"company": "Safe Transportation Research and Education Center",
+			"position": "Web Developer",
+			"website": "tims.berkeley.edu",
+			"startDate": "2013-01-01",
+			"endDate": "2014-12-31",
+			"summary": "At SafeTREC, I worked as part of the small team that is building the TIMS (Transport Injury Mapping System) suite of traffic safety applications. My contributions focused on web design, back end database integration via PHP, and the development of search and query algorithms.",
+			"highlights": [
+				"Skills: Client-Side Development, UI, UX, Design, API Integration",
+				"Stack: PHP5, CSS3, HTML5, Javascript, jQuery, Google Maps, & Leaflet"
+			]
+		}
+	],
+	"skills": [
+		{
+			"name": "Client-Side Javascript",
+			"level": "Excellent",
+			"keywords": ["HTML", "HTML5", "CSS", "CSS3", "Bootstrap", "NPM", "Bower", "Gulp", "Javascript", "ES6", "Web Components", "Jasmine", "Underscore", "Backbone", "Marionette", "Mixpanel", "Google Analytics"],
+			"aliases": ["Client-Side Development"]
+		},
+		{
+			"name": "Behavior Driven Development",
+			"keywords": ["tests", "testing", "unit testing", "end-to-end testing", "e2e", "Jasmine", "Mocha", "Karma", "BenchmarkJS", "Selenium", "WebDriver", "NightWatch", "Protractor"],
+			"level": "Proficient"
+		},
+		{
+			"name": "Browser Performance Optimization",
+			"level": "Excellent",
+			"keywords": ["timeline", "devTools", "optiimzation", "SpeedTest"],
+		},
+		{
+			"name": "Back-End Development",
+			"level": "Proficient",
+			"keywords": ["Node", "PHP", "PHP5", "SQL", "mySQL", "REST", "RESTful"],
+			"aliases": [
+				"Server-Side Development"
+			]
+		},
+		{
+			"name": "User Interfaces",
+			"level": "Excellent",
+			"keywords": ["mockups", "wireframing", "responsive design", "HTML", "HTML5", "CSS", "CSS3", "Bootstrap"],
+			"aliases": ["UI"]
+		},
+		{
+			"name": "User Experience",
+			"level": "Excellent",
+			"keywords": ["mockups", "wireframing", "Mixpanel", "Google Analytics"],
+			"aliases": ["UX"]
+		},
+		{
+			"name": "Web Design",
+			"level": "Excellent",
+			"keywords": ["HTML", "HTML5", "CSS", "CSS3", "Bootstrap"]
+		},
+		{
+			"name": "API Integration",
+			"level": "Excellent",
+			"keywords": ["REST", "RESTful", "API"],
+			"aliases": ["APIs"]
+		},
+		{
+			"name": "Databases",
+			"level": "Proficient",
+			"keywords": ["SQL", "mySQL"],
+			"aliases": ["SQL Databases"]
+		}
+	],
+	"languages": [
+		{
+			"language": "English",
+			"fluency": "Fluent"
+		},
+		{
+			"language": "Russian",
+			"fluency": "Fluent"
+		}
+	],
+	"interests": [
+		{
+			"name": "3D Printing",
+			"keywords": ["3d printing", "reprap"]
+		},
+		{
+			"name": "Architecture & Design",
+			"keywords": ["architecture", "urbanism", "design"]
+		},
+		{
+			"name": "Skiing",
+			"keywords": ["skiing", "snowsports"]
+		},
+		{
+			"name": "Rock Climbing",
+			"keywords": ["rock climbing", "hiking", "backpacking"]
+		},
+		{
+			"name": "Movies",
+			"keywords": ["movies", "film", "tv"]
+		},
+	],
+}
