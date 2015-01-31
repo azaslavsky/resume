@@ -1,0 +1,153 @@
+{
+	"basics": {
+		"name": "Alex Zaslavsky",
+		"label": "Front End Designer and Developer",
+		"picture": "https://media.licdn.com/mpr/mpr/p/7/005/01d/3c8/33e4340.jpg",
+		"email": "alex.zaslavsky.1990@gmail.com",
+		"phone": "510.303.4126",
+		"website": "https://azaslavsky.github.io/resume",
+		"summary": "I'm a Front End Designer and Developer currently looking for a position that will allow me to grow and contribute on a technical, UI, and UX design level.  I'm eager to work on projects that will allow me to synthesize my design and coding skills to make something truly fantastic.",
+		"location": {
+			"postalCode": "94546",
+			"city": "Castro Valley",
+			"countryCode": "US",
+			"region": "CA"
+		},
+		"profiles": [
+			{
+				"network": "LinkedIn",
+				"username": "Alex Zaslavsky",
+				"url": "www.linkedin.com/in/ayzaslavsky"
+			},
+			{
+				"network": "Twitter",
+				"username": "alex__zaslavsky",
+				"url": "https://twitter.com/alex__zaslavsky"
+			},{
+				"network": "Github",
+				"username": "azaslavsky",
+				"url": "https://github.com/azaslavsky"
+			},{
+				"network": "StackOverflow",
+				"username": "AlexZ",
+				"url": "http://stackoverflow.com/users/2230156/alexz"
+			},{
+				"network": "Codepen",
+				"username": "azaslavsky",
+				"url": "http://codepen.io/azaslavsky/"
+			}
+		]
+	},
+	"education": [
+		{
+			"institution": "University of California, Berkeley",
+			"area": "Architecture",
+			"studyType": "Bachelor",
+			"startDate": "2008-08-25",
+			"endDate": "2012-12-20",
+			"gpa": "3.4"
+		}
+	],
+	"work": [
+		{
+			"company": "Critica",
+			"position": "Co-Founder",
+			"website": "dev-app.critica.io",
+			"startDate": "2013-11-15",
+			"endDate": "2015-01-15",
+			"summary": "I co-founded Critica, a consumer and education focused discussion app, with two friends in 2013.  I was responsible for the entire user facing portion of the product, including UI/UX design, client-side Javascript, and integration with in-house and third party back-end APIs.",
+			"highlights": [
+				"Skills: Client-Side Development, UI, UX, Design, API Integration",
+				"Stack: Git, HTML5, CSS3, Javascript, RequireJS, jQuery, Underscore, Backbone, Marionette, Handlebars, Modernizr, Node.js, Gulp, & Chrome Extensions"
+			]
+		},
+		{
+			"company": "Safe Transportation Research and Education Center",
+			"position": "Web Developer",
+			"website": "tims.berkeley.edu",
+			"startDate": "2010-01-10",
+			"endDate": "2013-12-31",
+			"summary": "At SafeTREC, I was part of the small team that built the TIMS (Transport Injury Mapping System) suite of traffic safety applications. My contributions focused on web design, back end database integration via PHP, and the development of search and query algorithms.",
+			"highlights": [
+				"Skills: Client-Side Development, Server-Side Development, UI, UX, Design, API Integration, SQL Databases",
+				"Stack: Git, PHP5, CSS3, HTML5, Javascript, jQuery, Google Maps, & Leaflet"
+			]
+		}
+	],
+	"skills": [
+		{
+			"name": "Client-Side Javascript",
+			"level": "Excellent",
+			"keywords": ["HTML5", "CSS3", "SASS", "Bootstrap", "Javascript", "ES6", "Web Components", "Underscore", "Backbone", "Marionette", "React"],
+			"aliases": ["Client-Side Development"]
+		},
+		{
+			"name": "Behavior Driven Development",
+			"keywords": ["unit testing", "e2e", "Jasmine", "Mocha", "Karma", "BenchmarkJS", "Selenium", "NightWatch"],
+			"level": "Proficient"
+		},
+		{
+			"name": "Browser Performance Optimization",
+			"level": "Excellent",
+			"keywords": ["Chrome Timeline", "Dev Tools", "Speed Test"]
+		},
+		{
+			"name": "Back-End Development",
+			"level": "Proficient",
+			"keywords": ["PHP5", "Node.js", "REST"],
+			"aliases": ["Server-Side Development"]
+		},
+		{
+			"name": "User Interfaces",
+			"level": "Excellent",
+			"keywords": ["responsive design", "HTML5", "CSS3", "SASS", "Bootstrap"],
+			"aliases": ["UI"]
+		},
+		{
+			"name": "User Experience",
+			"level": "Excellent",
+			"keywords": ["mockups", "wireframing", "Mixpanel"],
+			"aliases": ["UX"]
+		},
+		{
+			"name": "API Integration",
+			"level": "Excellent",
+			"keywords": ["RESTful", "API"],
+			"aliases": ["APIs"]
+		},
+		{
+			"name": "Databases",
+			"level": "Proficient",
+			"keywords": ["SQL", "mySQL"],
+			"aliases": ["SQL Databases"]
+		}
+	],
+	"languages": [
+		{
+			"language": "English",
+			"fluency": "Fluent"
+		},
+		{
+			"language": "Russian",
+			"fluency": "Fluent"
+		}
+	],
+	"interests": [
+		{
+			"name": "Architecture",
+			"keywords": ["architecture", "urbanism", "design"]
+		},
+		{
+			"name": "Skiing",
+			"keywords": ["downhill", "backcountry"]
+		},
+		{
+			"name": "Rock Climbing",
+			"keywords": ["hiking", "backpacking"]
+		},
+		{
+			"name": "Movies",
+			"keywords": ["Sci Fi", "Comedy", "Drama"]
+		}
+	]
+}
