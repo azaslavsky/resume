@@ -1,0 +1,33 @@
+@import "bourbon";
+@import "../global/variables";
+
+//Header and footer bars
+.buffer {
+	min-height: $bufferOuterHeight;
+	background: $bufferBack;
+	box-shadow: $bufferShadow;
+}
+
+
+//An icon in the buffer
+@mixin buffer__icon ($include: true) {
+	@if $include == true {
+		@include flex-row();
+	}
+	font-size: 36px;
+	cursor: pointer;
+}
+
+.buffer__icon {
+	@include buffer__icon(false);
+	@extend .flex-row;
+	font-size: 36px;
+	line-height: 36px;
+	height: 36px;
+	width: 36px;
+	opacity: 0.75;
+
+	&:hover {
+		opacity: 1;
+	}
+}

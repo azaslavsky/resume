@@ -1,0 +1,8 @@
+@import "bourbon";
+@import "../global/variables";
+
+//Top Level Containers
+.container {
+	@include calc(padding-left, "(100% - 884px)/2");
+	@include calc(padding-right, "(100% - 884px)/2");
+}

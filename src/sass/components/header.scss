@@ -1,0 +1,185 @@
+@import "bourbon";
+@import "../global/variables";
+
+.navbar {
+	border-bottom: 1px solid $bufferBorder;
+}
+
+
+.navbar__title {
+	@include flex-row();
+	@include calc(width, "100% - 70px");
+	height: 100%;
+	float: left;
+	overflow: hidden;
+	position: relative;
+	padding-left: 6px;
+}
+
+
+.navbar__title__segment {
+	@include flex(1 1 100%);
+	@include justify-content(space-between);
+	@include transform(translateX(-100%));
+	@include transition(transform $animQuick linear);
+	position: relative;
+	min-width: 100%;
+	max-width: 100%;
+	width: 100%;
+	height: $bufferInnerHeight;
+	margin-top: $bufferMargin;
+	overflow: hidden;
+	whitespace: nowrap;
+}
+
+.navbar__title__span {
+	@include flex-row();
+	font-size: 18px;
+	min-height: $bufferInnerHeight;
+}
+
+.navbar__title__close {
+	@include icon($icon: close);
+	display: none;
+	margin-left: -8px;
+}
+
+.navbar--contacts .navbar__title__segment {
+	@include transform(translateX(0));
+}
+
+.navbar--contacts .navbar__title__contact .navbar__title__close {
+	display: block;
+}
+
+
+.navbar__dropdown {
+	@include transition(height $animQuick linear);
+	clear: both;
+	height: 0;
+	width: 100%;
+	overflow: hidden;
+}
+
+.navbar--contacts .navbar__dropdown {
+	height: 224px;
+	padding-top: 8px;
+}
+
+
+
+
+
+/*------------------------------------*\
+    #Avatar
+\*------------------------------------*/
+
+.avatar {
+	@include flex-row(inline-flex);
+	position: relative;
+	height: 100%;
+	width: 70px;
+	float: left;
+	cursor: pointer;
+	color: #777;
+	background: $bufferBack;
+	margin-top: $bufferMargin;
+}
+
+.avatar__img {
+	height: 32px;
+	width: 32px;
+	border-radius: 16px;
+}
+
+.avatar__arrow {
+	@include icon($icon: upward) {
+		@include transform(rotateZ(0deg));
+		@include transition(transform $animQuick linear);
+	};
+	@include flex-row(inline-flex);
+	position: relative;
+	bottom: 0;
+	margin-right: 2px;
+}
+
+.avatar.avatar--open .avatar__arrow {
+	@include icon($icon: upward) {
+		@include transform(rotateZ(180deg));
+	};
+}
+
+
+
+
+
+/*------------------------------------*\
+    #TitleScroller
+\*------------------------------------*/
+
+.titleScroller {
+}
+
+.titleScroller__span {
+	@include flex-row();
+	height: 100%;
+}
+
+
+
+
+
+/*------------------------------------*\
+    #Contact List
+\*------------------------------------*/
+
+.contact-list__line {
+	height: 36px;
+}
+
+.contact-list__icon {
+	@include flex-row();
+	@include flex(1 1 76px);
+	justify-content: flex-end;
+	min-width: 76px;
+	max-width: 76px;
+	height: 100%;
+	font-size: 24px;
+	padding-right: 15px;
+}
+
+.contact-list__text {
+	@include flex-row();
+	@include flex(2 1);
+	height: 100%;
+	font-size: 14px;
+}
+
+
+.icon-home {
+	@include icon($icon: home);
+}
+
+.icon-mail {
+	@include icon($icon: mail);
+}
+
+.icon-linkedin {
+	@include icon($icon: linkedin);
+}
+
+.icon-codepen {
+	@include icon($icon: codepen);
+}
+
+.icon-github {
+	@include icon($icon: github);
+}
+
+.icon-stackoverflow {
+	@include icon($icon: stackoverflow);
+}
+
+.icon-twitter {
+	@include icon($icon: twitter);
+}

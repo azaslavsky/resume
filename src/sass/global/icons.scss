@@ -1,0 +1,49 @@
+@include font-face('Icons', '../../icons/fonts/icomoon');
+
+//Icon set
+$icons: (
+	codepen: "\e000",
+	github: "\e001",
+	linkedin: "\e002",
+	website: "\e003",
+	stackoverflow: "\e004",
+	twitter: "\e005",
+	close: "\e006",
+	upward: "\e007",
+	downward: "\e008",
+	user: "\e009",
+	tools: "\e00a",
+	search: "\e00b",
+	experience: "\e00c",
+	mail: "\e00d",
+	bulb: "\e00e",
+	home: "\e00f",
+);
+
+
+
+
+//For adding font icons to elements using CSS pseudo-elements (http://jaydenseric.com/blog/fun-with-sass-and-font-icons)
+@mixin icon($position: before, $icon: false, $styles: true) {
+	@if $position == both {
+		$position: 'before, &:after';
+	}
+
+	//Either a :before or :after pseudo-element, or both, defaulting to :before
+	&:#{$position} {
+		@if $icon {
+			//A particular icon has been specified
+			content: "#{map-get($icons, $icon)}";
+		}
+		@if $styles {
+			//Supportive icon styles required
+			speak: none;
+			font-style: normal;
+			font-weight: normal;
+			font-family: 'Icons';
+		}
+
+		//Include any extra rules supplied for the pseudo-element
+		@content;
+	}
+}
