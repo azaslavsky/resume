@@ -7,10 +7,9 @@
 		"phone": "510.303.4126",
 		"website": "https://azaslavsky.github.io/resume",
 		"summary": "I'm a Front End Designer and Developer currently looking for a position that will allow me to grow and contribute on a technical, UI, and UX design level.  I'm eager to work on projects that will allow me to synthesize my design and coding skills to make something truly fantastic.",
-		"loctation": {
-			"address": "3504 Northwood Dr.",
+		"location": {
 			"postalCode": "94546",
-			"city": "Berkeley",
+			"city": "Castro Valley",
 			"countryCode": "US",
 			"region": "CA"
 		},
