@@ -1,0 +1,57 @@
+{
+  "name": "Critica",
+  "private": true,
+  "author": "Alex Zaslavsky",
+  "vers": "0.0.1",
+  "description": "An app for my resume",
+  "contributors": [
+    {
+      "name": "Alex Zaslavsky",
+      "email": "alex.zaslavsky.1990@gmail.com"
+    }
+  ],
+  "version": "0.1.2",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/azaslavsky/resume"
+  },
+  "bugs": {
+    "url": "https://github.com/azaslavsky/resume/issues"
+  },
+  "dependencies": {
+    "backbone": "^1.1.2",
+    "backbone-associations": "^0.6.2",
+    "jquery": "^2.1.3",
+    "react": "^0.12.2",
+    "title-case-minors": "0.0.2",
+    "underscore": "^1.7.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^1.9.1",
+    "browserify": "^8.1.1",
+    "browserify-shim": "^3.8.2",
+    "fs-extra": "^0.16.3",
+    "gulp": "~3.6.2",
+    "gulp-browserify": "^0.5.1",
+    "gulp-jshint": "^1.9.0",
+    "gulp-react": "^2.0.0",
+    "gulp-sass": "^1.3.2",
+    "gulp-uglify": "^1.1.0",
+    "node-bourbon": "^1.2.3",
+    "reactify": "^1.0.0",
+    "yargs": "^1.3.3"
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  },
+  "browserify-shim": {
+    "jquery": "global:$",
+    "underscore": "global:_",
+    "backbone": "global:Backbone",
+    "backbone-associations": "global:Backbone",
+    "react": "global:React"
+  }
+}
