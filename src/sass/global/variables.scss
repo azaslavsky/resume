@@ -4,13 +4,25 @@ $sections: 4;
 
 
 
-//Font Colors
+//Colors
 $color: #777;
 $colorWeak: #aaa;
 $colorStrong: #444;
 $invertedColor: #aaa;
 $invertedColorStrong: #ddd;
 $invertedColorWeak: #777;
+
+
+
+
+//Fonts
+$fontHeader: 300 18px 'Roboto';
+$fontPage: 700 18px 'Roboto';
+$fontSection: 700 16px 'Roboto';
+$fontSubSection: 700 14px 'Roboto';
+$fontParagraph: 300 14px 'Roboto';
+$fontTag: 300 12px 'Roboto';
+$fontStrong: 300 15px 'Roboto';
 
 
 
@@ -22,7 +34,7 @@ $bufferInnerHeight: 36px;
 $bufferMargin: 4px;
 $bufferBack: #ddd;
 $bufferBorder: #999;
-$bufferShadow: 0 0 10px 4px #999;
+$bufferShadow: 0 0 10px 2px #999;
 
 
 
@@ -32,3 +44,19 @@ $bufferShadow: 0 0 10px 4px #999;
 $animQuick: 0.3s;
 $animNormal: 0.6s;
 $animLong: 1.2s;
+
+
+
+
+
+//Page styles
+$pageBorder: #777;
+$pageShadow: 0 0 10px 4px #999;
+
+
+
+
+
+//About Page
+$aboutAvatarSize: 160px;
+$aboutAvatarShadow: 0 0 10px 4px #999;

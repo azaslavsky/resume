@@ -23,6 +23,7 @@ $icons: (
 
 
 
+
 //For adding font icons to elements using CSS pseudo-elements (http://jaydenseric.com/blog/fun-with-sass-and-font-icons)
 @mixin icon($position: before, $icon: false, $styles: true) {
 	@if $position == both {
@@ -47,3 +48,17 @@ $icons: (
 		@content;
 	}
 }
+
+
+
+
+
+//Generate an "icon-*" class for each icon in the list
+@mixin icon-classes() {
+	@each $i, $v in $icons {
+		.icon-#{$i} {
+			@include icon($icon: $i);
+		}
+	}
+}
+@include icon-classes();

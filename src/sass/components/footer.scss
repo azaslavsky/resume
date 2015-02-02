@@ -13,10 +13,7 @@
 	&:after {
 		@include flex(1 1 percentage(1/$sections));
 		@include align-self(flex-start);
-		@include transition-property(left, width);
-		@include transition-timing-function(ease-in-out);
-		@include transition-duration($animNormal);
-		@include position(absolute, 0 percentage(($sections - 1)/$sections) null 0); //(3 * ($sections/100))
+		@include position(absolute, 0 percentage(($sections - 1)/$sections) null 0);
 		content: "";
 		z-index: 1;
 		height: 6px;
@@ -64,7 +61,7 @@
 
 .footer__selector {
 	@include flex-row();
-	@include transition(background $animQuick linear);
+	@include transition(background $animQuick ease-in-out);
 	@include flex(0 0 25%);
 	@include justify-content(center);
 	position: relative;
@@ -90,39 +87,16 @@
 	padding-top: 2px;
 }
 
+.footer__icon.icon-bulb, .footer__icon.icon-tools {
+	font-size: 18px;
+	margin-top: -2px;
+}
+
 .footer__text {
 	@include flex-row();
-	font-size: 15px;
+	font: $fontStrong;
 	line-height: 100%;
 	height: 100%;
 	margin-left: 12px;
 	padding-top: 2px;
-}
-
-
-
-
-
-/*------------------------------------*\
-    #Icons
-\*------------------------------------*/
-
-.icon-user {
-	@include icon($icon: user);
-}
-
-.icon-briefcase {
-	@include icon($icon: briefcase);
-}
-
-.icon-bulb {
-	@include icon($icon: bulb);
-}
-
-.icon-tools {
-	@include icon($icon: tools);
-}
-
-.footer__icon.icon-bulb, .footer__icon.icon-tools {
-	font-size: 18px;
 }

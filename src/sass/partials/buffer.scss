@@ -4,8 +4,9 @@
 //Header and footer bars
 .buffer {
 	@include container(margin, 900px);
-	@include transform(translateX(0));
+	@include transform(translateZ(10));
 	position: fixed;
+	z-index: 10;
 	min-height: $bufferOuterHeight;
 
 	&:before {

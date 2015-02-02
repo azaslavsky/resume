@@ -8,7 +8,7 @@ var TitleScrollerView = React.createClass({
 		return (
 			/* jshint ignore:start */
 			<div className="titleScroller navbar__title__segment">
-				<span className="titleScroller__span navbar__title__span">Alex Zaslavsky</span>
+				<h1 className="titleScroller__span navbar__title__heading">Alex Zaslavsky</h1>
 			</div>
 			/* jshint ignore:end */
 		);

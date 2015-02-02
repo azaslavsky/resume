@@ -59,8 +59,43 @@ body {
 	background: #bbb;
 }
 
-.content {
+.main {
 	position: relative;
 	height: 100%;
 	width: 100%;
+}
+
+
+
+
+
+/*------------------------------------*\
+    #Headers
+\*------------------------------------*/
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+h1 {
+	font: $fontHeader;
+}
+
+h2 {
+	font: $fontPage;
+}
+
+h3 {
+	font: $fontSection;
+}
+
+h4 {
+	font: $fontSubSection;
+}
+
+p {
+	font: $fontParagraph;
+	line-height: 30px;
+	text-indent: 20px;
+	margin: 9px 0 15px 0;
 }

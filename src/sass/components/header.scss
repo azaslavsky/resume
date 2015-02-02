@@ -3,6 +3,7 @@
 
 .navbar.buffer {
 	top: 0;
+	z-index: 11;
 
 	&:before {
 		border-bottom: 1px solid $bufferBorder;
@@ -12,12 +13,12 @@
 
 .navbar__title {
 	@include flex-row();
-	@include calc(width, "100% - 70px");
+	@include calc(width, "100% - 75px");
 	height: 100%;
 	float: left;
 	overflow: hidden;
 	position: relative;
-	padding-left: 6px;
+	padding-left: 4px;
 }
 
 
@@ -25,7 +26,7 @@
 	@include flex(0 0 100%);
 	@include justify-content(space-between);
 	@include transform(translateX(-100%));
-	@include transition(transform $animNormal linear);
+	@include transition(transform $animNormal ease-in-out);
 	position: relative;
 	width: 100%;
 	height: $bufferInnerHeight;
@@ -34,9 +35,8 @@
 	whitespace: nowrap;
 }
 
-.navbar__title__span {
+.navbar__title__heading {
 	@include flex-row();
-	font-size: 18px;
 	min-height: $bufferInnerHeight;
 }
 
@@ -56,7 +56,7 @@
 
 
 .navbar__dropdown {
-	@include transition(height $animNormal linear);
+	@include transition(height $animNormal ease-in-out);
 	clear: both;
 	height: 0;
 	width: 100%;
@@ -79,7 +79,7 @@
 	@include flex-row(inline-flex);
 	position: relative;
 	height: 100%;
-	width: 70px;
+	width: 60px;
 	float: left;
 	cursor: pointer;
 	color: #777;
@@ -88,25 +88,31 @@
 }
 
 .avatar__img {
-	height: 32px;
-	width: 32px;
-	border-radius: 16px;
+	@include flex(0 0 30px);
+	height: 30px;
+	width: 30px;
+	border-radius: 15px;
+	margin-left: 6px;
 }
 
 .avatar__arrow {
 	@include icon($icon: upward) {
 		@include transform(rotateZ(0deg));
-		@include transition(transform $animQuick linear);
+		@include transition(transform $animQuick ease-in-out);
+		transform-origin: 18px 18px;
 	};
 	@include flex-row(inline-flex);
 	position: relative;
 	bottom: 0;
+	left: -6px;
+	width: 24px;
 	margin-right: 2px;
 }
 
 .avatar.avatar--open .avatar__arrow {
 	@include icon($icon: upward) {
-		@include transform(rotateZ(180deg));
+		@include transform(rotateZ(-180deg));
+		transform-origin: 18px 18px;
 	};
 }
 
@@ -143,45 +149,18 @@
 
 .contact-list__icon {
 	@include flex-row();
-	@include flex(0 0 76px);
+	@include flex(0 0 60px);
 	justify-content: flex-end;
 	height: 100%;
 	font-size: 24px;
-	padding-right: 15px;
+	padding-right: 2px;
+	color: $color;
 }
 
 .contact-list__text {
 	@include flex-row();
 	@include flex(2 1);
 	height: 100%;
-	font-size: 14px;
-}
-
-
-.icon-home {
-	@include icon($icon: home);
-}
-
-.icon-mail {
-	@include icon($icon: mail);
-}
-
-.icon-linkedin {
-	@include icon($icon: linkedin);
-}
-
-.icon-codepen {
-	@include icon($icon: codepen);
-}
-
-.icon-github {
-	@include icon($icon: github);
-}
-
-.icon-stackoverflow {
-	@include icon($icon: stackoverflow);
-}
-
-.icon-twitter {
-	@include icon($icon: twitter);
+	font: $fontStrong;
+	margin-left: 6px;
 }
