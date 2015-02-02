@@ -2,6 +2,7 @@ var React = require('react');
 
 //Load header, content, and footer
 var Header = require('../header/view');
+var Content = require('../content/view');
 var Footer = require('../footer/view');
 
 
@@ -12,8 +13,9 @@ module.exports = function(){
 		render: function() {
 			return (
 				/* jshint ignore:start */
-				<div className="content">
+				<div className="main">
 					<Header />
+					<Content />
 					<Footer />
 				</div>
 				/* jshint ignore:end */

@@ -63,6 +63,7 @@ gulp.task('bundle', ['lint'], function(){
 				'underscore',
 				'backbone',
 				'backbone-associations',
+				'marked',
 				'react'
 			]
 		})).on('error', handleError)

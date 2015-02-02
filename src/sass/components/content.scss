@@ -1,0 +1,7 @@
+@import "bourbon";
+@import "../global/variables";
+
+.content {
+	@include container(margin, 900px);
+	@include position(absolute, 0 0 0 0);
+}

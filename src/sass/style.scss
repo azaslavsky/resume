@@ -8,6 +8,10 @@
 @import "partials/container";
 @import "partials/buffer";
 
-//Modules
+//Top-level Modules
 @import "components/header";
+@import "components/content";
 @import "components/footer";
+
+//Inner Modules
+@import "components/page";
