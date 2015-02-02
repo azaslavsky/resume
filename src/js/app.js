@@ -6,6 +6,7 @@ var React = require('react');
  //Only need to do this once
 require('backbone-associations');
 Backbone.$ = $;
+React.initializeTouchEvents();
 
 //Get JSON data
 var resume = require('../json/resume');
@@ -27,14 +28,14 @@ resume.projects = extra.projects;
 resume.technologies = extra.technologies;
 
 //Add location and email to profiles
-resume.basics.profiles.pop({
+resume.basics.profiles.unshift({
 	network: 'mail',
 	url: 'mailto:' + resume.basics.email
 });
 
 
 
-//Grab header, content, and footer components
+//Load the model and view for the entire app
 var AppModel = require('./models/app');
 var AppView = require('./components/app/view');
 
@@ -43,5 +44,5 @@ window.app = {
 	model: new AppModel(resume)
 };
 
-//Load the main view
+//Start the main view
 AppView();

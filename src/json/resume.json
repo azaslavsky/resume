@@ -17,24 +17,27 @@
 			{
 				"network": "LinkedIn",
 				"username": "Alex Zaslavsky",
-				"url": "www.linkedin.com/in/ayzaslavsky"
+				"url": "https://www.linkedin.com/in/ayzaslavsky"
 			},
 			{
 				"network": "Twitter",
 				"username": "alex__zaslavsky",
 				"url": "https://twitter.com/alex__zaslavsky"
-			},{
+			},
+			{
 				"network": "Github",
 				"username": "azaslavsky",
 				"url": "https://github.com/azaslavsky"
-			},{
+			},
+			{
 				"network": "StackOverflow",
 				"username": "AlexZ",
 				"url": "http://stackoverflow.com/users/2230156/alexz"
-			},{
+			},
+			{
 				"network": "Codepen",
 				"username": "azaslavsky",
-				"url": "http://codepen.io/azaslavsky/"
+				"url": "http://codepen.io/azaslavsky"
 			}
 		]
 	},

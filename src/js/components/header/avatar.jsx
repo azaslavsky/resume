@@ -10,9 +10,9 @@ var AvatarView = React.createClass({
 
 	handleAvatarToggle: function(e) {
 		if (this.props.onToggleAvatar) {
-			this.props.onToggleAvatar(!this.props.open);
+			this.props.onToggleAvatar( !this.props.open );
 		} else {
-			this.setState({open: typeof this.state.open === 'boolean' ? !this.state.open : !this.props.open});
+			this.setState({ open: typeof this.state.open === 'boolean' ? !this.state.open : !this.props.open });
 		}
 	},
 

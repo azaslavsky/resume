@@ -18,13 +18,11 @@
 
 
 .navbar__title__segment {
-	@include flex(1 1 100%);
+	@include flex(0 0 100%);
 	@include justify-content(space-between);
 	@include transform(translateX(-100%));
-	@include transition(transform $animQuick linear);
+	@include transition(transform $animNormal linear);
 	position: relative;
-	min-width: 100%;
-	max-width: 100%;
 	width: 100%;
 	height: $bufferInnerHeight;
 	margin-top: $bufferMargin;
@@ -54,7 +52,7 @@
 
 
 .navbar__dropdown {
-	@include transition(height $animQuick linear);
+	@include transition(height $animNormal linear);
 	clear: both;
 	height: 0;
 	width: 100%;
@@ -62,8 +60,7 @@
 }
 
 .navbar--contacts .navbar__dropdown {
-	height: 224px;
-	padding-top: 8px;
+	height: 284px;
 }
 
 
@@ -134,15 +131,16 @@
 \*------------------------------------*/
 
 .contact-list__line {
-	height: 36px;
+	height: $bufferInnerHeight + $bufferMargin;
+	display: flex;
+	color: $colorStrong;
+	text-decoration: none;
 }
 
 .contact-list__icon {
 	@include flex-row();
-	@include flex(1 1 76px);
+	@include flex(0 0 76px);
 	justify-content: flex-end;
-	min-width: 76px;
-	max-width: 76px;
 	height: 100%;
 	font-size: 24px;
 	padding-right: 15px;
