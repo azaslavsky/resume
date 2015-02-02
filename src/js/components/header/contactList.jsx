@@ -8,11 +8,11 @@ var ContactLink = require('./contactLink');
 var ContactListView = React.createClass({
 	render: function() {
 		//Make the static line
-		var location = window.app.model.get('basics.location');
+		var location = window.app.model.get('resume.basics.location');
 		var locationStr = location.get('city') +', '+ location.get('region') +', '+ location.get('countryCode') +', '+ location.get('postalCode');
 
 		//Make the linked lines
-		var links = window.app.model.get('basics.profiles').map(function(link) {
+		var links = window.app.model.get('resume.basics.profiles').map(function(link) {
 			//https://regex101.com/r/pB7uD7/1
 			return (
 				/* jshint ignore:start */

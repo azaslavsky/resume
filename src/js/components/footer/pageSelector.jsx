@@ -28,9 +28,9 @@ var PageSelectorView = React.createClass({
 
 		return (
 			/* jshint ignore:start */
-			<div className={'footer__selector' + selectedClass} key={this.props.index} section={this.props.section} onClick={this.handleSelectionToggle}>
+			<div className={'footer__selector' + selectedClass} key={this.props.index} name={this.props.name} onClick={this.handleSelectionToggle}>
 				<span className={'footer__icon icon-' + this.props.icon} />
-				<span className="footer__text">{ this.props.section.charAt(0).toUpperCase() + this.props.section.substring(1) }</span>
+				<span className="footer__text">{ this.props.name.charAt(0).toUpperCase() + this.props.name.substring(1) }</span>
 			</div>
 			/* jshint ignore:end */
 		);

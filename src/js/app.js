@@ -36,12 +36,14 @@ resume.basics.profiles.unshift({
 
 
 //Load the model and view for the entire app
-var AppModel = require('./models/app');
+var AppModel = require('./model/app');
 var AppView = require('./components/app/view');
 
 //Create an object store for the entire app
 window.app = {
-	model: new AppModel(resume)
+	model: new AppModel({
+		resume: resume
+	})
 };
 
 //Start the main view

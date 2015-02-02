@@ -32,8 +32,8 @@ var HeaderView = React.createClass({
 		var searchOpen = this.state.search ? ' navbar--search' : '';
 		return (
 			/* jshint ignore:start */
-			<div className={'navbar container buffer' + contactsOpen + searchOpen}>
-				<Avatar img="https://media.licdn.com/mpr/mpr/p/7/005/01d/3c8/33e4340.jpg" onToggleAvatar={this.onToggleContacts} open={this.state.contacts} />
+			<div className={'navbar buffer' + contactsOpen + searchOpen}>
+				<Avatar img={window.app.model.get('resume.basics.picture')} onToggleAvatar={this.onToggleContacts} open={this.state.contacts} />
 				<div className="navbar__title flex-row">
 					<div className="navbar__title__contact navbar__title__segment flex-row">
 						<span className="navbar__title__span">Contact Me</span>

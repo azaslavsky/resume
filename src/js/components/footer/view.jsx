@@ -3,16 +3,6 @@ var PageSelector = require('./pageSelector');
 
 
 
-//Selector specfiication
-var selectorSpec = [
-	{ index: 0, section: 'about', icon: 'user'},
-	{ index: 1, section: 'experience', icon: 'briefcase'},
-	{ index: 2, section: 'projects', icon: 'bulb'},
-	{ index: 3, section: 'skills', icon: 'tools'}
-];
-
-
-
 //View definition
 var FooterView = React.createClass({
 	getInitialState: function() {
@@ -29,11 +19,11 @@ var FooterView = React.createClass({
 	render: function() {
 		//Create the page selectors
 		var diff, animClass = '', indexClass = '';
-		var selectors = selectorSpec.map(function(selector) {
+		var pages = window.app.model.get('pages').map(function(page) {
 			//https://regex101.com/r/pB7uD7/1
 			return (
 				/* jshint ignore:start */
-				<PageSelector icon={selector.icon} section={selector.section} selected={selector.index === this.state.index} index={selector.index} onToggleSelect={this.onSelection} />
+				<PageSelector icon={page.get('icon')} name={page.get('name')} selected={page.get('index') === this.state.index} index={page.get('index')} onToggleSelect={this.onSelection} />
 				/* jshint ignore:end */
 			);
 		}.bind(this));
@@ -51,8 +41,8 @@ var FooterView = React.createClass({
 
 		return (
 			/* jshint ignore:start */
-			<div className={'footer container buffer' + animClass + indexClass}>
-				{selectors}
+			<div className={'footer buffer' + animClass + indexClass}>
+				{pages}
 			</div>
 			/* jshint ignore:end */
 		);
