@@ -1,0 +1,55 @@
+{
+	"pages": [
+		{
+			"index": 0,
+			"name": "about",
+			"title": "Hi, I'm Alex!",
+			"body": [
+				{
+					"type": "h3",
+					"content": "About This App",
+				},
+				{
+					"type": "p",
+					"content": "This app was created to be a living demonstration of my design and client-side coding skills.  The app is based on an extended version of the JSON Resume, with some additional fields (\"projects\" and \"technologies\") which I felt were missing from the original spec.  The app uses [SASS](http://sass-lang.com/) and [Bourbon](http://bourbon.io/) for CSS preprocessing, and the following 3rd-party Javascript libraries: [Browserify](http://browserify.org/), [marked](https://github.com/chjj/marked), [Zepto](http://zeptojs.com/) (a drop-in replacement for [jQuery](http://jquery.com/)) [loDash](https://lodash.com/) (instead of [Underscore](http://underscorejs.org/)), [Exoskeleton](http://exosjs.com/) (instead of [Backbone](http://backbonejs.org/)), [Backbone-Associations](http://dhruvaray.github.io/backbone-associations/), [React](http://facebook.github.io/), and [Flux](http://facebook.github.io/flux/).  It also uses a few Javascript modules I wrote myself: [searchGuesser](https://github.com/azaslavsky/searchGuesser), [sneakyBars](https://github.com/azaslavsky/sneakyBars), [backbone-hashMate](https://github.com/azaslavsky/backbone-hashMate)."
+				},
+				{
+					"type": "p",
+					"content": "If you'd like to use this app for your own resume, go ahead!  All of the relevant data is stored in three JSON files in the Github repository ([resume.json](https://github.com/azaslavsky/resume/blob/master/json/resume.json), [extra.json](https://github.com/azaslavsky/resume/blob/master/json/extra.json), and [copy.json](https://github.com/azaslavsky/resume/blob/master/json/copy.json)), so if you replace that information with your own, you should be good to go.  One request though - the repository is licensed under GPL v3, so please don't remove the copyright at the bottom of each page, and keep the license pop-up intact!  I worked hard on this - please don't take the work without proper attribution.",
+				},
+				{
+					"type": "h3",
+					"content": "Other Formats",
+				},
+				{
+					"type": "p",
+					"content": "A truncated, more \"traditional\" version of this resume app may be accessed in several other formats.  It can be [viewed online](https://represent.io/alexzaslavsky), or downloaded as a [PDF](https://represent.io/alexzaslavsky.pdf). Since the data format for this app is loosely based on the JSON Resume schema, it only makes sense that it is available [in that format as well](http://registry.jsonresume.org/alexzaslavsky).  Finally, the entire JSON structure that populates this app with data is available in its [Github repository](https://github.com/azaslavsky/resume/tree/master/json).",
+				},
+				{
+					"type": "h3",
+					"content": "Get In Touch",
+				},
+				{
+					"type": "p",
+					"content": "I'm easy to find online, so feel free to get in touch via any one of the mediums [listed here](#page=about&contact).",
+				}
+			]
+		},
+		{
+			"index": 1,
+			"name": "experience",
+			"title": "Experience"
+		},
+		{
+			"index": 2,
+			"name": "projects",
+			"title": "Projects"
+		},
+		{
+			"index": 3,
+			"name": "skills",
+			"title": "Skills"
+		}
+	],
+	"images": ""
+}

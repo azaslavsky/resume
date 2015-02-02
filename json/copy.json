@@ -1,0 +1,44 @@
+[
+	{
+		"index": 0,
+		"name": "about",
+		"title": "Hi, I'm Alex!",
+		"img": "",
+		"description": "",
+		"extra": [
+			{
+				"type": "p",
+				"heading": "About This App",
+				"content": "",
+			},
+			{
+				"type": "p",
+				"heading": "In Other Formats",
+				"content": "",
+			},
+			{
+				"type": "p",
+				"heading": "Get In Touch",
+				"content": "",
+			},
+		]
+	},
+	{
+		"index": 1,
+		"name": "experience",
+		"title": "Experience",
+		"description": ""
+	},
+	{
+		"index": 2,
+		"name": "projects",
+		"title": "Projects",
+		"description": ""
+	},
+	{
+		"index": 3,
+		"name": "skills",
+		"title": "Skills",
+		"description": ""
+	}
+]

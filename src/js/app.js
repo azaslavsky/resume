@@ -11,6 +11,7 @@ React.initializeTouchEvents();
 //Get JSON data
 var resume = require('../json/resume');
 var extra = require('../json/extra');
+var copy = require('../json/copy');
 
 
 
