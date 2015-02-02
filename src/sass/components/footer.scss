@@ -1,0 +1,128 @@
+@import "bourbon";
+@import "../global/variables";
+
+.footer {
+	@include flex-row();
+	bottom: 0;
+	height: 44px;
+
+	&:before {
+		border-top: 1px solid $bufferBorder;
+	}
+
+	&:after {
+		@include flex(1 1 percentage(1/$sections));
+		@include align-self(flex-start);
+		@include transition-property(left, width);
+		@include transition-timing-function(ease-in-out);
+		@include transition-duration($animNormal);
+		@include position(absolute, 0 percentage(($sections - 1)/$sections) null 0); //(3 * ($sections/100))
+		content: "";
+		z-index: 1;
+		height: 6px;
+		background: $color;
+	}
+
+
+	@mixin footer-anim($direction, $steps, $time: $animQuick) {
+		@if $direction == left {
+			$follow: right;
+		} @else {
+			$follow: left;
+		}
+
+		&.footer--anim-#{$direction}-#{$steps} {
+			&:after {
+				$duration: $time * 0.75 * ((($steps - 1)/2) + 1);
+				$delay: $time * 0.25 * ((($steps - 1)/2) + 1);
+				@include transition($direction $duration ease-in-out, $follow $duration ease-in-out $delay);
+			}
+		}
+	}
+
+	@mixin footer-index($possible: $sections) {
+		@for $i from 0 to $possible {
+			&.footer--index-#{$i} {
+				&:after {
+					left: percentage($i/$possible);
+					right: percentage(($possible - 1 - $i)/$possible);
+				}
+			}
+		}
+	}
+
+	@include footer-anim(left, 1);
+	@include footer-anim(left, 2);
+	@include footer-anim(left, 3);
+	@include footer-anim(right, 1);
+	@include footer-anim(right, 2);
+	@include footer-anim(right, 3);
+
+	@include footer-index();
+}
+
+
+.footer__selector {
+	@include flex-row();
+	@include transition(background $animQuick linear);
+	@include flex(0 0 25%);
+	@include justify-content(center);
+	position: relative;
+	text-align: center;
+	margin-top: 1px;
+	height: $bufferOuterHeight;
+	line-height: $bufferOuterHeight;
+	cursor: pointer;
+
+	&:hover {
+		color: $colorStrong;
+	}
+
+	&.footer__selector--selected {
+		color: $colorStrong;
+		background: #ccc;
+	}
+}
+
+.footer__icon {
+	@include flex-row();
+	font-size: 24px;
+	padding-top: 2px;
+}
+
+.footer__text {
+	@include flex-row();
+	font-size: 15px;
+	line-height: 100%;
+	height: 100%;
+	margin-left: 12px;
+	padding-top: 2px;
+}
+
+
+
+
+
+/*------------------------------------*\
+    #Icons
+\*------------------------------------*/
+
+.icon-user {
+	@include icon($icon: user);
+}
+
+.icon-briefcase {
+	@include icon($icon: briefcase);
+}
+
+.icon-bulb {
+	@include icon($icon: bulb);
+}
+
+.icon-tools {
+	@include icon($icon: tools);
+}
+
+.footer__icon.icon-bulb, .footer__icon.icon-tools {
+	font-size: 18px;
+}

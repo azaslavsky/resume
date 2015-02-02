@@ -8,6 +8,7 @@
 * {
 	@include box-sizing(border-box);
 }
+
 html, body {
 	height: 100%;
 	width: 100%;
@@ -56,4 +57,10 @@ html {
 
 body {
 	background: #bbb;
+}
+
+.content {
+	position: relative;
+	height: 100%;
+	width: 100%;
 }

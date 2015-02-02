@@ -1,8 +1,12 @@
 @import "bourbon";
 @import "../global/variables";
 
-.navbar {
-	border-bottom: 1px solid $bufferBorder;
+.navbar.buffer {
+	top: 0;
+
+	&:before {
+		border-bottom: 1px solid $bufferBorder;
+	}
 }
 
 

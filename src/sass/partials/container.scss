@@ -1,8 +1,14 @@
 @import "bourbon";
 @import "../global/variables";
 
-//Top Level Containers
-.container {
-	@include calc(padding-left, "(100% - 884px)/2");
-	@include calc(padding-right, "(100% - 884px)/2");
+@mixin container($type: padding, $size: 900px) {
+	@if $type == padding {
+		@include calc(padding-left, "(100% - #{$size})/2");
+		@include calc(padding-right, "(100% - #{$size})/2");
+		width: 100%;
+	} @else {
+		@include calc(margin-left, "(100% - #{$size})/2");
+		@include calc(margin-right, "(100% - #{$size})/2");
+		width: $size;
+	}
 }
