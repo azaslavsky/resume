@@ -33,7 +33,7 @@ var HeaderView = React.createClass({
 		return (
 			/* jshint ignore:start */
 			<div className={'navbar buffer' + contactsOpen + searchOpen}>
-				<Avatar img={window.app.model.get('resume.basics.picture')} onToggleAvatar={this.onToggleContacts} open={this.state.contacts} />
+				<Avatar img={window.app.model.getPicture()} onToggleAvatar={this.onToggleContacts} open={this.state.contacts} />
 				<div className="navbar__title flex-row">
 					<div className="navbar__title__contact navbar__title__segment flex-row">
 						<span className="navbar__title__span">Contact Me</span>
