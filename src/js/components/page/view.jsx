@@ -1,5 +1,5 @@
 var React = require('react');
-var PageHeader = require('./pageHeader');
+var PageHeader = require('./header');
 
 
 
