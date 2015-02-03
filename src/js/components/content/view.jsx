@@ -1,7 +1,8 @@
 var React = require('react');
-var Page = require('../page/view');
 var About = require('./about');
 var Experience = require('./experience');
+var Skills = require('./skills');
+var Projects = require('./projects');
 
 
 
@@ -18,6 +19,8 @@ var ContentView = React.createClass({
 			<div className="content">
 				<About/>
 				<Experience/>
+				<Skills/>
+				<Projects/>
 			</div>
 			/* jshint ignore:end */
 		);

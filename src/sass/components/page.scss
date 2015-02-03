@@ -4,7 +4,7 @@
 .page {
 	@include transition(opacity $animNormal ease-in-out);
 	//@include calc(min-height, "100% - 120px");
-	min-height: 400px;
+	min-height: 200px;
 	position: relative;
 	margin-bottom: 72px;
 	padding: 16px 6px;
@@ -42,6 +42,13 @@
 	height: 40px;
 	margin-left: 4px;
 	color: $colorWeak;
+}
+
+.skills, .projects {
+	.page__icon {
+		font-size: 42px;
+		text-align: center;
+	}
 }
 
 .page__heading {

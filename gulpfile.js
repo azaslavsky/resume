@@ -85,7 +85,7 @@ gulp.task('watch', function(){
 		console.log('Style bundle updated');
 	});
 
-	var jsWatcher = gulp.watch('./src/js/**/*(*.jsx|*.js)', ['bundle']);
+	var jsWatcher = gulp.watch('./src/*(js|json)/**/*(*.jsx|*.js|*.json)', ['bundle']);
 	jsWatcher.on('change', function(e){
 		console.log('Browserify bundle updated');
 	});

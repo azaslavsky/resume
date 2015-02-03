@@ -6,8 +6,8 @@ var Header = require('./header/header');
 var Pages = {
 	about: require('./pages/about'),
 	experience: require('./pages/experience'),
-	projects: require('./pages/projects'),
-	skills: require('./pages/skills')
+	skills: require('./pages/skills'),
+	projects: require('./pages/projects')
 };
 
 

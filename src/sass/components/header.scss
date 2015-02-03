@@ -92,7 +92,7 @@
 	height: 30px;
 	width: 30px;
 	border-radius: 15px;
-	margin-left: 6px;
+	margin-left: 4px;
 }
 
 .avatar__arrow {
@@ -104,7 +104,7 @@
 	@include flex-row(inline-flex);
 	position: relative;
 	bottom: 0;
-	left: -6px;
+	left: -5px;
 	width: 24px;
 	margin-right: 2px;
 }
