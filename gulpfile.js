@@ -12,6 +12,7 @@ var debug = require('gulp-debug');
 var jshint = require('gulp-jshint');
 var react = require('gulp-react');
 var sass = require('gulp-sass');
+var watch = require('gulp-watch');
 
 
 
@@ -80,13 +81,15 @@ gulp.task('dist', ['bundle'], function(){
 
 //Load gulp watchers
 gulp.task('watch', function(){
-	var cssWatcher = gulp.watch('./src/sass/**/*(*.sass|*.scss)', ['sass']);
-	cssWatcher.on('change', function(e){
-		console.log('Style bundle updated');
+	var cssWatcher = watch('./src/sass/**/*(*.sass|*.scss)', function(){
+		gulp.start('sass', function(){
+			console.log('Style bundle updated');
+		});
 	});
 
-	var jsWatcher = gulp.watch('./src/*(js|json)/**/*(*.jsx|*.js|*.json)', ['bundle']);
-	jsWatcher.on('change', function(e){
-		console.log('Browserify bundle updated');
+	var jsWatcher = gulp.watch('./src/*(js|json)/**/*(*.jsx|*.js|*.json)', function(){
+		gulp.start('bundle', function(){
+			console.log('Browserify bundle updated');
+		});
 	});
 });
