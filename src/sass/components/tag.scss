@@ -1,0 +1,85 @@
+@import "bourbon";
+@import "../global/variables";
+
+.tags {
+	margin-left: 16px;
+}
+
+
+.tag {
+	@include flex-row(inline-flex);
+	position: relative;
+	font: $fontTag;
+	padding: 3px 0;
+	margin: 3px 6px 3px 0;
+	border: 1px solid $colorWeak;
+	background: $colorVeryWeak;
+	color: $colorStrong;
+	border-radius: 6px;
+	cursor: pointer;
+
+	&:hover {
+		background: $colorWeak;
+		border-color: $color;
+		color: $invertedColorStrong;
+
+		.tag__text {
+			@include transition-delay($animQuick);
+			margin: 0 6px 0 4px;
+		}
+
+		.tag__more {
+			@include transition-delay($animQuick);
+			padding: 1px 1px 0 1px;
+			width: 22px;
+		}
+	}
+}
+
+.tag__text {
+	margin: 0 16px;
+	@include transition(margin $animQuick ease-in-out);
+}
+
+.tag__more {
+	@include icon($icon: more);
+	@include flex-row(inline-flex);
+	@include transform(scale(0.75, 1));
+	@include transition-property(width, padding);
+	@include transition-duration($animQuick);
+	@include transition-timing-function(ease-in-out);
+	position: relative;
+	overflow: hidden;
+	width: 0;
+	padding: 1px 0 0 0;
+	height: 8px;
+	line-height: 8px;
+	font-size: 20px;
+	margin: 0 2px 0 -4px;
+	color: white;
+}
+
+
+.tag--expanded {
+	$arrowOffset: 20px;
+	$arrowSize: 16px;
+
+	&:before, &:after {
+		@include position(absolute, -1 * $arrowOffset null null 50%);
+		content: "";
+		width: 0;
+		height: 0;
+		margin-left: -1 * $arrowOffset;
+		border-style: solid;
+		border-width: $arrowSize $arrowSize 0 $arrowSize;
+	}
+
+	&:before {
+		top: (-1 * $arrowOffset) + 1px;
+		border-color: #444 transparent transparent transparent;
+	}
+
+	&:after {
+		border-color: #aaa transparent transparent transparent;
+	}
+}

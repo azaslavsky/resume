@@ -7,7 +7,7 @@
 	min-height: 200px;
 	position: relative;
 	margin-bottom: 72px;
-	padding: 16px 6px;
+	padding: 16px 6px 32px 6px;
 	width: 100%;
 	border: 1px solid $pageBorder;
 	background: white;
@@ -64,11 +64,23 @@
 \*------------------------------------*/
 
 .page__content {
-	padding: 0 56px;
+	padding: 0 58px;
 }
 
 .page__content h3 {
 	margin-top: 24px;
+}
+
+
+
+
+
+/*------------------------------------*\
+    #Section
+\*------------------------------------*/
+
+.page__section {
+	position: relative;
 }
 
 

@@ -13,7 +13,7 @@
 		@include position(absolute, 0 -200% 0 -200%);
 		content: "";
 		z-index: -1;
-		background: $bufferBack;
+		background: $colorVeryWeak;
 		box-shadow: $bufferShadow;
 	}
 }

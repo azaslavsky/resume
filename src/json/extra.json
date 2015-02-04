@@ -32,7 +32,7 @@
 		{
 			"name": "HTML5",
 			"aliases": ["HTML"],
-			"categories": ["Languages and Standards"],
+			"categories": ["Languages/Standards"],
 			"level": "Excellent"
 		},
 		{
@@ -64,7 +64,7 @@
 		},
 		{
 			"name": "Chrome Extensions",
-			"categories": ["Languages and Standards"],
+			"categories": ["Languages/Standards"],
 			"level": "Excellent"
 		},
 		{
@@ -75,13 +75,13 @@
 		{
 			"name": "CSS3",
 			"aliases": ["CSS"],
-			"categories": ["Design", "Languages and Standards"],
+			"categories": ["Design", "Languages/Standards"],
 			"level": "Excellent"
 		},
 		{
 			"name": "ES6",
 			"aliases": ["ECMAScript 6"],
-			"categories": ["Languages and Standards"],
+			"categories": ["Languages/Standards"],
 			"level": "Proficient"
 		},
 		{
@@ -124,7 +124,7 @@
 		{
 			"name": "Javascript",
 			"aliases": ["JS"],
-			"categories": ["Languages and Standards"],
+			"categories": ["Languages/Standards"],
 			"level": "Excellent"
 		},
 		{
@@ -168,7 +168,7 @@
 		{
 			"name": "mySQL",
 			"aliases": ["SQL"],
-			"categories": ["Languages and Standards"],
+			"categories": ["Languages/Standards"],
 			"level": "Proficient"
 		},
 		{
@@ -202,7 +202,7 @@
 		{
 			"name": "REST",
 			"aliases": ["RESTful", "REST API", "RESTful API"],
-			"categories": ["Languages and Standards"],
+			"categories": ["Languages/Standards"],
 			"level": "Proficient"
 		},
 		{
@@ -231,7 +231,7 @@
 		{
 			"name": "Web Components",
 			"aliases": ["Polymer"],
-			"categories": ["Languages and Standards"],
+			"categories": ["Languages/Standards"],
 			"level": "Familiar"
 		}
 	]

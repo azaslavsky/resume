@@ -1,0 +1,140 @@
+@import "bourbon";
+@import "../global/variables";
+
+.filters {
+	@include position(absolute, -6px 0 null null);
+	@include flex-row();
+}
+
+.filter {
+	@include transition-property(border-radius, border-color, background, color);
+	@include transition-duration($animQuick);
+	@include transition-timing-function(ease-in-out);
+	@include transition-delay($animQuick/2);
+	position: relative;
+	display: inline-block;
+	font: $fontTag;
+	min-width: 150px;
+	padding: 3px 12px;
+	margin: 3px 6px 3px 0;
+	border: 1px solid $colorWeak;
+	background: white;
+	color: $color;
+	border-radius: 6px;
+	z-index: 2;
+	cursor: pointer;
+}
+
+.filter--active {
+	border-color: $colorVeryStrong;
+	background: $color;
+	color: white;
+}
+
+
+
+
+
+/*------------------------------------*\
+    #Selection Display
+\*------------------------------------*/
+
+.filter__display {
+	@include flex-row();
+	@include justify-content(space-between);
+}
+
+.filter__text {
+	display: inline-block;
+	text-align: center;
+}
+
+.filter__arrow {
+	@include icon($icon: downward) {
+		@include transform(rotateZ(0deg));
+		@include transition(transform $animQuick ease-in-out);
+		transform-origin: 15px 8px;
+	};
+	@include flex-row(inline-flex);
+	position: relative;
+	width: 16px;
+	height: 16px;
+	line-height: 16px;
+	font-size: 30px;
+	padding-top: 1px;
+	margin: 0 2px 0 -4px;
+}
+
+.filter.filter--expanded .filter__arrow {
+	@include icon($icon: downward) {
+		@include transform(rotateZ(-180deg));
+	};
+}
+
+
+
+
+
+/*------------------------------------*\
+    #Dropdown
+\*------------------------------------*/
+
+.filter__dropdown {
+	@include calc(width, "100% + 2px");
+	@include position(absolute, 22px null null -1px);
+	@include transition-property(max-height, border-color, background);
+	@include transition-duration($animQuick);
+	@include transition-timing-function(ease-in-out);
+	overflow: hidden;
+	max-height: 0;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	border-width: 1px;
+	border-style: solid;
+	border-color: transparent;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+}
+
+.filter__option {
+	padding: 6px 12px;
+	text-align: center;
+	cursor: pointer;
+
+	&:hover {
+		color: $colorStrong;
+		background: $colorVeryWeak;
+	}
+
+	&.filter__default {
+		border-bottom: 1px solid $colorVeryWeak;
+	}
+}
+
+
+.filter--expanded {
+	@include transition-property(border-radius);
+	@include transition-duration($animQuick);
+	@include transition-timing-function(ease-in-out);
+	@include transition-delay(0);
+	border-color: $colorStrong;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+
+	.filter__dropdown {
+		@include transition-delay($animQuick/2);
+		max-height: 400px;
+		border-color: $colorStrong;
+		border-top-color: $colorWeak;
+		background: white;
+	}
+
+	&.filter--active {
+		.filter__dropdown {
+			border-color: $colorVeryStrong;
+			border-top-color: $colorStrong;
+			background: $color;
+		}
+	}
+}
