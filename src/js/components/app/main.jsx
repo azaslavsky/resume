@@ -1,9 +1,9 @@
 var React = require('react');
 
 //Load header, content, and footer
-var Header = require('../header/view');
-var Content = require('../content/view');
-var Footer = require('../footer/view');
+var Header = require('../header/header');
+var Content = require('../content/content');
+var Footer = require('../footer/footer');
 
 
 

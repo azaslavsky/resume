@@ -1,10 +1,10 @@
 var React = require('react');
-var Page = require('../page/view');
+var Page = require('../page/page');
 
 
 
 //View definition
-var AboutView = React.createClass({
+var ProjectsView = React.createClass({
 	render: function() {
 		var projects = window.app.model.getCategory('projects');
 
@@ -24,4 +24,4 @@ var AboutView = React.createClass({
 
 
 //Export
-module.exports = AboutView;
+module.exports = ProjectsView;

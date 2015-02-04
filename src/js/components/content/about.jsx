@@ -1,7 +1,7 @@
 var React = require('react');
 var marked = require('marked');
 var _ = require('underscore');
-var Page = require('../page/view');
+var Page = require('../page/page');
 
 
 

@@ -1,10 +1,10 @@
 var React = require('react');
-var Page = require('../page/view');
+var Page = require('../page/page');
 
 
 
 //View definition
-var AboutView = React.createClass({
+var SkillsView = React.createClass({
 	render: function() {
 		var skills = window.app.model.getCategory('skills');
 		var technologies = window.app.model.getCategory('technologies');
@@ -21,4 +21,4 @@ var AboutView = React.createClass({
 
 
 //Export
-module.exports = AboutView;
+module.exports = SkillsView;
