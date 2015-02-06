@@ -1,0 +1,139 @@
+@import "bourbon";
+@import "../global/variables";
+
+$detailWidth: 400px;
+$detailPadding: 32px;
+$bubbleSize: 60px;
+$bubbleOffsetX: 0.4;
+$bubbleOffsetY: 0.2;
+$bubblePadding: 12px;
+
+.detail {
+	@include position(absolute, null null 40px null);
+	@include calc (left, "#{-1 * ($detailWidth/2)} + 50%");
+	margin-bottom: 1px;
+	z-index: 0;
+	width: 400px;
+	min-height: 100px;
+	border: 1px solid $invertedColorWeak;
+	background: $invertedColor	;
+	box-shadow: $contentShadow;
+	padding: 10px 0 20x 0;
+	border-radius: $tagRadius * 2;
+	color: $invertedColorVeryWeak;
+	cursor: default;
+}
+
+
+
+
+
+/*------------------------------------*\
+    #Avatar Image
+\*------------------------------------*/
+
+.detail__avatar {
+	display: block;
+	position: absolute;
+	top: -1 * $bubbleSize * $bubbleOffsetY;
+	left: -1 * $bubbleSize * $bubbleOffsetX;
+	height: $bubbleSize;
+	width: $bubbleSize;
+}
+
+.detail__avatar:before {
+	content: "";
+	z-index: 1;
+	position: absolute;
+	background: $invertedColor;
+	border: 1px solid $invertedColorWeak;
+	border-radius: 50%;
+	height: 100%;
+	width: 100%;
+	box-shadow: $contentShadow;
+}
+
+.detail__avatar:after {
+	content: "";
+	z-index: 1;
+	position: absolute;
+	background: $invertedColor;
+	top:  $bubbleSize * $bubbleOffsetY;
+	left: $bubbleSize * $bubbleOffsetX;
+	height: 100%;
+	width: 100%;
+}
+
+.detail__img {
+	@include calc(width, "100% - #{$bubblePadding * 2}");
+	@include calc(height, "100% - #{$bubblePadding * 2}");
+	z-index: 3;
+	position: absolute;
+	background: white;
+	top: $bubblePadding + 1px;
+	left: $bubblePadding + 1px;
+	border-radius: 50%;
+	border: 1px solid $extraColor;
+}
+
+
+
+
+
+/*------------------------------------*\
+    #Header
+\*------------------------------------*/
+
+.detail__header {
+	@include flex-row();
+	@include justify-content(space-between);
+	@include calc(width, "100% - #{$detailPadding * 1.5}");
+	position: relative;
+	z-index: 2;
+	left: $detailPadding;
+	height: $bubbleSize - ($bubblePadding * 2) + 2px;
+}
+
+.detail__close {
+	@include icon($icon: close);
+	@include transition(color $animQuick ease-in-out);
+	font-size: 32px;
+	color: $color;
+	height: 16px;
+	line-height: 16px;
+	cursor: pointer;
+
+	&:hover {
+		color: $colorStrong;
+	}
+}
+
+
+
+
+
+/*------------------------------------*\
+    #Content Table
+\*------------------------------------*/
+
+.detail__content {
+	@include calc(max-width, "100% - #{$detailPadding * 1.5}");
+	position: relative;
+	z-index: 2;
+	left: $detailPadding;
+}
+
+.detail__cell {
+	padding-right: 8px;
+
+	&.detail__cell__title {
+		color: $colorStrong;
+		opacity: 0.75;
+	}
+
+	&.detail__cell__info {
+		color: $colorVeryStrong;
+		border-left: 1px solid $colorWeak;
+		padding-left: 8px;
+	}
+}

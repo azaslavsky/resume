@@ -30,15 +30,9 @@
 	],
 	"technologies": [
 		{
-			"name": "HTML5",
-			"aliases": ["HTML"],
-			"categories": ["Languages/Standards"],
-			"level": "Excellent"
-		},
-		{
 			"name": "Backbone",
 			"aliases": ["ExoSkeleton"],
-			"categories": ["Libraries"],
+			"categories": ["Front End", "Libraries"],
 			"level": "Excellent"
 		},
 		{
@@ -49,33 +43,38 @@
 		},
 		{
 			"name": "Bootstrap",
-			"categories": ["Libraries"],
-			"level": "Competent"
+			"categories": ["Front End", "Libraries"],
+			"level": "Proficient"
+		},
+		{
+			"name": "Bourbon",
+			"categories": ["Design", "Front End", "Libraries", "Productiviy Tools"],
+			"level": "Excellent"
 		},
 		{
 			"name": "Bower",
-			"categories": ["Productiviy Tools"],
+			"categories": ["Front End", "Productiviy Tools"],
 			"level": "Excellent"
 		},
 		{
 			"name": "Browserify",
-			"categories": ["Libraries"],
+			"categories": ["Front End", "Libraries"],
 			"level": "Proficient"
 		},
 		{
-			"name": "Chrome Extensions",
-			"categories": ["Languages/Standards"],
+			"name": "Chrome Extensions API",
+			"categories": ["Front End", "Languages/Standards"],
 			"level": "Excellent"
 		},
 		{
 			"name": "Compass",
-			"categories": ["Design", "Libraries", "Productiviy Tools"],
+			"categories": ["Design", "Front End", "Libraries", "Productiviy Tools"],
 			"level": "Proficient"
 		},
 		{
 			"name": "CSS3",
 			"aliases": ["CSS"],
-			"categories": ["Design", "Languages/Standards"],
+			"categories": ["Design", "Front End", "Languages/Standards"],
 			"level": "Excellent"
 		},
 		{
@@ -86,13 +85,13 @@
 		},
 		{
 			"name": "Flux",
-			"categories": ["Libraries"],
+			"categories": ["Front End", "Libraries"],
 			"level": "Familiar"
 		},
 		{
 			"name": "Google Maps",
 			"aliases": ["GMaps", "Google Maps V3", "GMaps V3"],
-			"categories": ["Libraries"],
+			"categories": ["Front End", "Libraries"],
 			"level": "Excellent"
 		},
 		{
@@ -107,13 +106,19 @@
 		},
 		{
 			"name": "Handlebars",
-			"categories": ["Libraries"],
+			"categories": ["Front End", "Libraries"],
 			"level": "Proficient"
+		},
+		{
+			"name": "HTML5",
+			"aliases": ["HTML"],
+			"categories": ["Front End", "Languages/Standards"],
+			"level": "Excellent"
 		},
 		{
 			"name": "Illustrator",
 			"aliases": ["Adboce Illustrator"],
-			"categories": ["Design"],
+			"categories": ["Design", "Front End"],
 			"level": "Excellent"
 		},
 		{
@@ -130,7 +135,7 @@
 		{
 			"name": "jQuery",
 			"aliases": ["Zepto"],
-			"categories": ["Libraries"],
+			"categories": ["Front End", "Libraries"],
 			"level": "Excellent"
 		},
 		{
@@ -141,18 +146,18 @@
 		},
 		{
 			"name": "Leaflet",
-			"categories": ["Libraries"],
+			"categories": ["Front End", "Libraries"],
 			"level": "Familiar"
 		},
 		{
 			"name": "Marionette",
-			"categories": ["Libraries"],
+			"categories": ["Front End", "Libraries"],
 			"level": "Excellent"
 		},
 		{
 			"name": "Mixpanel",
 			"aliases": ["Analytics"],
-			"categories": ["Libraries"],
+			"categories": ["Front End", "Libraries"],
 			"level": "Proficient"
 		},
 		{
@@ -162,41 +167,41 @@
 		},
 		{
 			"name": "Modernizr",
-			"categories": ["Libraries"],
+			"categories": ["Front End", "Libraries"],
 			"level": "Excellent"
 		},
 		{
 			"name": "mySQL",
 			"aliases": ["SQL"],
-			"categories": ["Languages/Standards"],
+			"categories": ["Back End", "Languages/Standards"],
 			"level": "Proficient"
 		},
 		{
 			"name": "Nightwatch",
-			"categories": ["Libraries", "Testing"],
+			"categories": ["Front End", "Libraries", "Testing"],
 			"level": "Familiar"
 		},
 		{
 			"name": "Node.js",
 			"aliases": ["Node"],
-			"categories": ["Back End"],
+			"categories": ["Back End", "Languages/Standards"],
 			"level": "Familiar"
 		},
 		{
 			"name": "Photoshop",
 			"aliases": ["Adobe Photoshop"],
-			"categories": ["Design"],
+			"categories": ["Design", "Front End"],
 			"level": "Proficient"
 		},
 		{
 			"name": "PHP5",
 			"aliases": ["PHP"],
-			"categories": ["Back End"],
+			"categories": ["Back End", "Languages/Standards"],
 			"level": "Familiar"
 		},
 		{
 			"name": "React",
-			"categories": ["Libraries"],
+			"categories": ["Front End", "Libraries"],
 			"level": "Familiar"
 		},
 		{
@@ -207,19 +212,19 @@
 		},
 		{
 			"name": "RequireJS",
-			"categories": ["Libraries"],
+			"categories": ["Front End", "Libraries"],
 			"level": "Excellent"
 		},
 		{
 			"name": "SASS",
 			"aliases": ["SCSS", "CSS Preprocessor"],
-			"categories": ["Design", "Libraries", "Productiviy Tools"],
+			"categories": ["Design", "Front End", "Libraries", "Productiviy Tools"],
 			"level": "Excellent"
 		},
 		{
 			"name": "Selenium",
 			"aliases": ["WebDriver"],
-			"categories": ["Testing"],
+			"categories": ["Front End", "Testing"],
 			"level": "Proficient"
 		},
 		{
@@ -231,7 +236,7 @@
 		{
 			"name": "Web Components",
 			"aliases": ["Polymer"],
-			"categories": ["Languages/Standards"],
+			"categories": ["Front End", "Languages/Standards"],
 			"level": "Familiar"
 		}
 	]
