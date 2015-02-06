@@ -1,6 +1,7 @@
+var _ = require('underscore');
 var Backbone = require('backbone');
 var BaseModel = require('./base');
-var KeywordListMixin = require('./mixins/keywordList');
+var KeywordListMixin = require('./_mixins/keywordList');
 
 
 

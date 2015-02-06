@@ -1,4 +1,5 @@
 var React = require('react');
+var ModelMixin = require('../_mixins/ModelMixin');
 var marked = require('marked');
 var _ = require('underscore');
 var Page = require('../page/page');
@@ -7,6 +8,12 @@ var Page = require('../page/page');
 
 //View definition
 module.exports = React.createClass({
+	mixins: [ModelMixin()],
+
+	componentWillMount: function(){
+		this.model = window.app.model.getPage('about');
+	},
+
 	render: function() {
 		var summary = [{
 			type: 'div',

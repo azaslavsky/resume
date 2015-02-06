@@ -1,6 +1,7 @@
+var _ = require('underscore');
 var Backbone = require('backbone');
 var BaseModel = require('./base');
-var FragmentParserMixin = require('./mixins/fragmentParser');
+var FragmentParserMixin = require('./_mixins/fragmentParser');
 
 
 

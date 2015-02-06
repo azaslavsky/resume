@@ -1,15 +1,18 @@
 var React = require('react');
+var ModelMixin = require('../_mixins/ModelMixin');
 var Page = require('../page/page');
 
 
 
 //View definition
 module.exports = React.createClass({
+	mixins: [ModelMixin()],
+
+	componentWillMount: function(){
+		this.model = window.app.model.getPage('experience');
+	},
+
 	render: function() {
-		var education = window.app.model.getCategory('education');
-
-		var work = window.app.model.getCategory('work');
-
 		return (
 			/* jshint ignore:start */
 			<Page name="experience">

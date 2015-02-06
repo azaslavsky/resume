@@ -1,5 +1,6 @@
 var React = require('react');
-var ModelMixin = require('../modelMixin');
+var ModelMixin = require('../_mixins/ModelMixin');
+
 var Page = require('../page/page');
 var Section = require('../page/section');
 var Filter = require('../filter/filter');

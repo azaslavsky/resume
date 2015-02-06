@@ -1,5 +1,5 @@
 var React = require('react');
-var ModelMixin = require('../modelMixin');
+var ModelMixin = require('../_mixins/ModelMixin');
 
 
 
