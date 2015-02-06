@@ -15,7 +15,6 @@
 	display: inline-block;
 	font: $fontTag;
 	min-width: 150px;
-	padding: 3px 12px;
 	margin: 3px 6px 3px 0;
 	border: 1px solid $colorWeak;
 	background: white;
@@ -42,6 +41,7 @@
 .filter__display {
 	@include flex-row();
 	@include justify-content(space-between);
+	padding: 3px 12px;
 }
 
 .filter__text {

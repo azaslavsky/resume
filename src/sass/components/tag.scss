@@ -3,36 +3,46 @@
 
 .tags {
 	margin-left: 16px;
+	z-index: 10;
+	position: relative;
+}
+
+
+@mixin tag-selected(){
+	background: $invertedColor;
+	border-color: $invertedColorWeak;
+	color: $invertedColorVeryWeak;
+
+	 .tag__text {
+		@include transition-delay($animQuick);
+		margin: 0 6px 0 4px;
+	}
+
+	.tag__more {
+		@include transition-delay($animQuick);
+		padding: 1px 1px 0 1px;
+		width: 22px;
+	}
 }
 
 
 .tag {
 	@include flex-row(inline-flex);
+	@include transition-property(opacity, color);
+	@include transition-duration($animNormal);
+	@include transition-timing-function(ease-in-out);
 	position: relative;
 	font: $fontTag;
 	padding: 3px 0;
 	margin: 3px 6px 3px 0;
 	border: 1px solid $colorWeak;
 	background: $colorVeryWeak;
-	color: $colorStrong;
+	color: $color;
 	border-radius: 6px;
 	cursor: pointer;
 
-	&:hover {
-		background: $colorWeak;
-		border-color: $color;
-		color: $invertedColorStrong;
-
-		.tag__text {
-			@include transition-delay($animQuick);
-			margin: 0 6px 0 4px;
-		}
-
-		.tag__more {
-			@include transition-delay($animQuick);
-			padding: 1px 1px 0 1px;
-			width: 22px;
-		}
+	&:hover { //:not(.tag--hidden)
+		@include tag-selected();
 	}
 }
 
@@ -56,11 +66,13 @@
 	line-height: 8px;
 	font-size: 20px;
 	margin: 0 2px 0 -4px;
-	color: white;
+	color: $invertedColorVeryWeak;
 }
 
 
 .tag--expanded {
+	@include tag-selected();
+
 	$arrowOffset: 20px;
 	$arrowSize: 16px;
 
@@ -72,14 +84,30 @@
 		margin-left: -1 * $arrowOffset;
 		border-style: solid;
 		border-width: $arrowSize $arrowSize 0 $arrowSize;
+		z-index: 2;
 	}
 
 	&:before {
 		top: (-1 * $arrowOffset) + 1px;
-		border-color: #444 transparent transparent transparent;
+		border-color: $invertedColorWeak transparent transparent transparent;
 	}
 
 	&:after {
-		border-color: #aaa transparent transparent transparent;
+		border-color: $invertedColor transparent transparent transparent;
+	}
+}
+
+
+.tag--hidden {
+	&:not(.tag--expanded) {
+		opacity: 0.4;
+		color: $colorVeryStrong;
+		background: white;
+	}
+
+	&:hover {
+		color: $color;
+		opacity: 1;
+		background: $colorVeryWeak;
 	}
 }

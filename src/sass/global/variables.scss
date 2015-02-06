@@ -10,9 +10,14 @@ $colorWeak: #aaa;
 $color: #777;
 $colorStrong: #444;
 $colorVeryStrong: #222;
-$invertedColor: #aaa;
-$invertedColorStrong: #eee;
+
+$invertedColorVeryWeak: #333;
 $invertedColorWeak: #777;
+$invertedColor: #bbb;
+$invertedColorStrong: #eee;
+$invertedColorVeryStrong: #fff;
+
+$extraColor: #999;
 
 
 
@@ -21,7 +26,7 @@ $invertedColorWeak: #777;
 $fontHeader: 300 18px 'Roboto';
 $fontPage: 700 18px 'Roboto';
 $fontSection: 700 16px 'Roboto';
-$fontSubSection: 700 14px 'Roboto';
+$fontSubSection: 300 16px 'Roboto';
 $fontParagraph: 300 14px 'Roboto';
 $fontTag: 300 12px 'Roboto';
 $fontStrong: 300 15px 'Roboto';
@@ -34,8 +39,8 @@ $fontStrong: 300 15px 'Roboto';
 $bufferOuterHeight: 44px;
 $bufferInnerHeight: 36px;
 $bufferMargin: 4px;
-$bufferBorder: #999;
-$bufferShadow: 0 0 10px 2px #999;
+$bufferBorder: $extraColor;
+$bufferShadow: 0 0 10px 2px $extraColor;
 
 
 
@@ -50,9 +55,15 @@ $animLong: 1.2s;
 
 
 
-//Page styles
-$pageBorder: #777;
-$pageShadow: 0 0 10px 4px #999;
+//Content
+$contentShadow: 0 0 10px 4px $extraColor;
+
+
+
+
+
+//Tags
+$tagRadius: 6px;
 
 
 
@@ -60,4 +71,4 @@ $pageShadow: 0 0 10px 4px #999;
 
 //About Page
 $aboutAvatarSize: 160px;
-$aboutAvatarShadow: 0 0 10px 4px #999;
+$aboutAvatarShadow: 0 0 10px 4px $extraColor;

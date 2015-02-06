@@ -5,6 +5,7 @@ var BaseModel = require('./base');
 
 module.exports = BaseModel.extend({
 	defaults: {
-		expanded: false
+		expanded: false,
+		hidden: false
 	}
 });

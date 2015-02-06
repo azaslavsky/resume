@@ -6,21 +6,25 @@
 	//@include calc(min-height, "100% - 120px");
 	min-height: 200px;
 	position: relative;
-	margin-bottom: 72px;
+	margin-bottom: 48px;
 	padding: 16px 6px 32px 6px;
 	width: 100%;
-	border: 1px solid $pageBorder;
+	border: 1px solid $color;
 	background: white;
 	opacity: 0.6;
 
 	&:first-child {
 		margin-top: 60px;
 	}
+
+	&:last-child {
+		margin-bottom: 72px;
+	}
 }
 
 .page--active {
 	opacity: 1;
-	box-shadow: $pageShadow;
+	box-shadow: $contentShadow;
 }
 
 
@@ -65,10 +69,16 @@
 
 .page__content {
 	padding: 0 58px;
-}
 
-.page__content h3 {
-	margin-top: 24px;
+	h3 {
+		margin-top: 24px;
+	}
+
+	a {
+		&:hover {
+			text-decoration: underline;
+		}
+	}
 }
 
 

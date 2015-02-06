@@ -19,21 +19,21 @@ var HeaderView = React.createClass({
 		this.setState({contacts: false});
 	},
 
-	onToggleContacts: function(open) {
-		this.setState({contacts: !!open, search: false});
+	onToggleContacts: function(opened) {
+		this.setState({contacts: !!opened, search: false});
 	},
 
-	onToggleSearch: function(open) {
-		this.setState({contacts: false, search: !!open});
+	onToggleSearch: function(opened) {
+		this.setState({contacts: false, search: !!opened});
 	},
 
 	render: function() {
-		var contactsOpen = this.state.contacts ? ' navbar--contacts' : '';
-		var searchOpen = this.state.search ? ' navbar--search' : '';
+		var contactsOpened = this.state.contacts ? ' navbar--contacts' : '';
+		var searchOpened = this.state.search ? ' navbar--search' : '';
 		return (
 			/* jshint ignore:start */
-			<div className={'navbar buffer' + contactsOpen + searchOpen}>
-				<Avatar img={window.app.model.getPicture()} onToggleAvatar={this.onToggleContacts} open={this.state.contacts} />
+			<div className={'navbar buffer' + contactsOpened + searchOpened}>
+				<Avatar img={window.app.model.getPicture()} onToggleAvatar={this.onToggleContacts} opened={this.state.contacts} />
 				<div className="navbar__title flex-row">
 					<div className="navbar__title__contact navbar__title__segment flex-row">
 						<h1 className="navbar__title__heading">Contact Me</h1>

@@ -109,7 +109,7 @@
 	margin-right: 2px;
 }
 
-.avatar.avatar--open .avatar__arrow {
+.avatar.avatar--opened .avatar__arrow {
 	@include icon($icon: upward) {
 		@include transform(rotateZ(-180deg));
 		transform-origin: 18px 18px;

@@ -39,7 +39,8 @@
 		{
 			"index": 2,
 			"name": "skills",
-			"title": "Skills"
+			"title": "Skills",
+			"levels": ["Familiar", "Proficient", "Excellent"]
 		},
 		{
 			"index": 3,
@@ -47,6 +48,5 @@
 			"title": "Other Projects & Interests"
 		}
 	],
-	"images": "",
-	"levels": ["Familiar", "Proficient", "Excellent"]
+	"images": ""
 }

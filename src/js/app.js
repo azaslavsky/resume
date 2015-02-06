@@ -60,7 +60,8 @@ window.app = {
 	model: new AppModel({
 		resume: resume,
 		copy: copy
-	})
+	}),
+	dispatcher: require('./dispatcher')
 };
 
 //Start the main view

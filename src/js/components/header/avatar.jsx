@@ -10,18 +10,18 @@ var AvatarView = React.createClass({
 
 	handleAvatarToggle: function(e) {
 		if (this.props.onToggleAvatar) {
-			this.props.onToggleAvatar( !this.props.open );
+			this.props.onToggleAvatar( !this.props.opened );
 		} else {
-			this.setState({ open: typeof this.state.open === 'boolean' ? !this.state.open : !this.props.open });
+			this.setState({ opened: typeof this.state.opened === 'boolean' ? !this.state.opened : !this.props.opened });
 		}
 	},
 
 	render: function() {
-		var avatarOpen = !(typeof this.state.open === 'boolean' ? this.state.open : this.props.open);
-		var avatarOpenClass = avatarOpen ? ' avatar--open' : '';
+		var avatarOpened = !(typeof this.state.opened === 'boolean' ? this.state.opened : this.props.opened);
+		var avatarOpenedClass = avatarOpened ? ' avatar--opened' : '';
 		return (
 			/* jshint ignore:start */
-			<div className={'avatar' + avatarOpenClass} onClick={this.handleAvatarToggle}>
+			<div className={'avatar' + avatarOpenedClass} onClick={this.handleAvatarToggle}>
 				<img className="avatar__img" src={this.props.img} />
 				<span className="avatar__arrow buffer__icon" />
 			</div>

@@ -12,7 +12,7 @@ var PageView = React.createClass({
 
 		return (
 			/* jshint ignore:start */
-			<div className={'page' + selectedClass + nameClass}>
+			<div className={'page page--active' + selectedClass + nameClass}>
 				<PageHeader text={pageData.get('title')} icon={pageData.get('icon')} />
 				<div className="page__content">
 					{this.props.children}
