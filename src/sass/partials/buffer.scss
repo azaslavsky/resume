@@ -6,7 +6,7 @@
 	@include container(margin, 900px);
 	@include transform(translateZ(10));
 	position: fixed;
-	z-index: 10;
+	z-index: 100;
 	min-height: $bufferOuterHeight;
 
 	&:before {

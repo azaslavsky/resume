@@ -4,7 +4,7 @@ var PageSelector = require('./pageSelector');
 
 
 //View definition
-var FooterView = React.createClass({
+module.exports = React.createClass({
 	getInitialState: function() {
 		return {
 			index: 0,
@@ -48,8 +48,3 @@ var FooterView = React.createClass({
 		);
 	}
 });
-
-
-
-//Export
-module.exports = FooterView;

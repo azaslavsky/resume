@@ -6,7 +6,7 @@ var Page = require('../page/page');
 
 
 //View definition
-var AboutView = React.createClass({
+module.exports = React.createClass({
 	render: function() {
 		var summary = [{
 			type: 'div',
@@ -40,8 +40,3 @@ var AboutView = React.createClass({
 		);
 	}
 });
-
-
-
-//Export
-module.exports = AboutView;

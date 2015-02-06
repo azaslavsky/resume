@@ -3,7 +3,7 @@
 
 .navbar.buffer {
 	top: 0;
-	z-index: 11;
+	z-index: 101;
 
 	&:before {
 		border-bottom: 1px solid $bufferBorder;

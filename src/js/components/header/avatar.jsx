@@ -3,7 +3,7 @@ var React = require('react');
 
 
 //View definition
-var AvatarView = React.createClass({
+module.exports = React.createClass({
 	getInitialState: function() {
 		return {};
 	},
@@ -29,8 +29,3 @@ var AvatarView = React.createClass({
 		);
 	}
 });
-
-
-
-//Export
-module.exports = AvatarView;

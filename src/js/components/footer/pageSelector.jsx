@@ -3,7 +3,7 @@ var React = require('react');
 
 
 //View definition
-var PageSelectorView = React.createClass({
+module.exports = React.createClass({
 	getInitialState: function() {
 		return {};
 	},
@@ -36,8 +36,3 @@ var PageSelectorView = React.createClass({
 		);
 	}
 });
-
-
-
-//Export
-module.exports = PageSelectorView;

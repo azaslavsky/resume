@@ -5,7 +5,7 @@ var Dispatcher = require('../../dispatcher');
 
 
 //View definition
-var FilterView = React.createClass({
+module.exports = React.createClass({
 	mixins: [ModelMixin()],
 
 	handleToggleExpand: function(active){
@@ -56,8 +56,3 @@ var FilterView = React.createClass({
 		);
 	}
 });
-
-
-
-//Export
-module.exports = FilterView;

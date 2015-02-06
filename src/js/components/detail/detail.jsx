@@ -4,7 +4,7 @@ var ModelMixin = require('../modelMixin');
 
 
 //View definition
-var DetailView = React.createClass({
+module.exports = React.createClass({
 	mixins: [ModelMixin()],
 
 	//Get a camel-cased version of the image name
@@ -62,8 +62,3 @@ var DetailView = React.createClass({
 		);
 	}
 });
-
-
-
-//Export
-module.exports = DetailView;

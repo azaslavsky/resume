@@ -3,7 +3,7 @@ var React = require('react');
 
 
 //View definition
-var ContactStaticView = React.createClass({
+module.exports = React.createClass({
 	render: function() {
 		return (
 			/* jshint ignore:start */
@@ -17,8 +17,3 @@ var ContactStaticView = React.createClass({
 		);
 	}
 });
-
-
-
-//Export
-module.exports = ContactStaticView;

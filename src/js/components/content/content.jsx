@@ -7,7 +7,7 @@ var Projects = require('./projects');
 
 
 //View definition
-var ContentView = React.createClass({
+module.exports = React.createClass({
 	getInitialState: function() {
 		return {
 		};
@@ -26,8 +26,3 @@ var ContentView = React.createClass({
 		);
 	}
 });
-
-
-
-//Export
-module.exports = ContentView;

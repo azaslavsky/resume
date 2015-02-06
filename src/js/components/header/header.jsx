@@ -7,7 +7,7 @@ var ContactList = require('./contactList');
 
 
 //View definition
-var HeaderView = React.createClass({
+module.exports = React.createClass({
 	getInitialState: function() {
 		return {
 			contacts: false,
@@ -47,8 +47,3 @@ var HeaderView = React.createClass({
 		);
 	}
 });
-
-
-
-//Export
-module.exports = HeaderView;

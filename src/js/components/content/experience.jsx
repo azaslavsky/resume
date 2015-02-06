@@ -4,7 +4,7 @@ var Page = require('../page/page');
 
 
 //View definition
-var ExperienceView = React.createClass({
+module.exports = React.createClass({
 	render: function() {
 		var education = window.app.model.getCategory('education');
 
@@ -20,8 +20,3 @@ var ExperienceView = React.createClass({
 		);
 	}
 });
-
-
-
-//Export
-module.exports = ExperienceView;

@@ -8,7 +8,7 @@ var Tag = require('../tag/tag');
 
 
 //View definition
-var SkillsView = React.createClass({
+module.exports = React.createClass({
 	mixins: [ModelMixin(true)],
 
 	componentWillMount: function(){
@@ -65,8 +65,3 @@ var SkillsView = React.createClass({
 		);
 	}
 });
-
-
-
-//Export
-module.exports = SkillsView;

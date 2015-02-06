@@ -3,7 +3,7 @@ var React = require('react');
 
 
 //View definition
-var TitleScrollerView = React.createClass({
+module.exports = React.createClass({
 	render: function() {
 		return (
 			/* jshint ignore:start */
@@ -14,8 +14,3 @@ var TitleScrollerView = React.createClass({
 		);
 	}
 });
-
-
-
-//Export
-module.exports = TitleScrollerView;

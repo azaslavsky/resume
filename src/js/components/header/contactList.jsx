@@ -5,7 +5,7 @@ var ContactLink = require('./contactLink');
 
 
 //View definition
-var ContactListView = React.createClass({
+module.exports = React.createClass({
 	render: function() {
 		//Make the static line
 		var location = window.app.model.getLocation();
@@ -36,8 +36,3 @@ var ContactListView = React.createClass({
 		);
 	}
 });
-
-
-
-//Export
-module.exports = ContactListView;

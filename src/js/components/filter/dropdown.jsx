@@ -3,7 +3,7 @@ var React = require('react');
 
 
 //View definition
-var DropdownView = React.createClass({
+module.exports = React.createClass({
 	render: function() {
 		return (
 			/* jshint ignore:start */
@@ -14,8 +14,3 @@ var DropdownView = React.createClass({
 		);
 	}
 });
-
-
-
-//Export
-module.exports = FilterView;

@@ -4,7 +4,7 @@ var PageHeader = require('./header');
 
 
 //View definition
-var PageView = React.createClass({
+module.exports = React.createClass({
 	render: function() {
 		var pageData = window.app.model.getPage(this.props.name);
 		var selectedClass = pageData.get('selected') ? ' page--active' : '';
@@ -22,8 +22,3 @@ var PageView = React.createClass({
 		);
 	}
 });
-
-
-
-//Export
-module.exports = PageView;
