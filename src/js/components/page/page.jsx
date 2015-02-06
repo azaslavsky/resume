@@ -7,12 +7,12 @@ var PageHeader = require('./header');
 module.exports = React.createClass({
 	render: function() {
 		var pageData = window.app.model.getPage(this.props.name);
-		var selectedClass = pageData.get('selected') ? ' page--active' : '';
+		var selectedClass = pageData.get('active') ? ' page--active' : '';
 		var nameClass = this.props.name ? ' ' + this.props.name : '';
 
 		return (
 			/* jshint ignore:start */
-			<div className={'page page--active' + selectedClass + nameClass}>
+			<div className={'page' + selectedClass + nameClass}>
 				<PageHeader text={pageData.get('title')} icon={pageData.get('icon')} />
 				<div className="page__content">
 					{this.props.children}
