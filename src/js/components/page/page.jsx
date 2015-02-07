@@ -1,5 +1,6 @@
 var React = require('react');
 var PageHeader = require('./header');
+var PageCopyright = require('./copyright');
 
 
 
@@ -17,6 +18,7 @@ module.exports = React.createClass({
 				<div className="page__content">
 					{this.props.children}
 				</div>
+				<PageCopyright />
 			</div>
 			/* jshint ignore:end */
 		);

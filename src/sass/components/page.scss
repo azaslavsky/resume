@@ -7,7 +7,7 @@
 	min-height: 200px;
 	position: relative;
 	margin-bottom: 48px;
-	padding: 16px 6px 32px 6px;
+	padding: 16px 6px 40px 6px;
 	width: 100%;
 	border: 1px solid $color;
 	background: white;
@@ -148,4 +148,21 @@
 	width: $aboutAvatarSize + 8px;
 	margin-left: 12px;
 	float: right;
+}
+
+
+
+
+
+/*------------------------------------*\
+    #Copyright
+\*------------------------------------*/
+
+.page__copyright {
+	color: $colorWeak;
+	font-size: 11px;
+	text-align: center;
+	position: relative;
+	top: 18px;
+	height: 11px;
 }
