@@ -9,7 +9,7 @@ module.exports = React.createClass({
 	mixins: [ModelMixin()],
 
 	componentWillMount: function(){
-		this.model = window.app.model.getPage('proejects');
+		this.model = window.app.model.getPage('projects');
 	},
 
 	render: function() {

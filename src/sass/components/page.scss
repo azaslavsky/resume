@@ -107,10 +107,11 @@
 	height: $aboutAvatarSize;
 	width: $aboutAvatarSize;
 	position: absolute;
-	top: $topOffset * -1;
+	//top: $topOffset * -1;
+	top: 0;
 	right: 60px;
 
-	&:after, &:before {
+	/*&:after, &:before {
 		content: "";
 		width: 0;
 		height: 0;
@@ -127,9 +128,8 @@
 		@include filter(blur(4px));
 		border-width: 0 0 $topOffset $topOffset;
 		border-color: transparent transparent black transparent;
-		left: $topOffset;
 		z-index: 1;
-	}
+	}*/
 }
 
 .page__avatar__img {
@@ -137,7 +137,7 @@
 	height: 100%;
 	width: 100%;
 	z-index: 0;
-	border-top: 1px solid $colorStrong;
+	border-top: 1px solid $color;
 	border-bottom-left-radius: 50%;
 	border-bottom-right-radius: 50%;
 	box-shadow: $aboutAvatarShadow;
@@ -145,7 +145,7 @@
 
 .page__avatar__placeholder {
 	height: 90px;
-	width: 160px;
+	width: $aboutAvatarSize + 8px;
 	margin-left: 12px;
 	float: right;
 }

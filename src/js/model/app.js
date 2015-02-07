@@ -76,7 +76,6 @@ module.exports = Backbone.AssociatedModel.extend(
 						active: !index
 					}, this.get('copy').pages[index])
 				);
-				thisPage.parents.push(this);
 
 				pages.add(thisPage);
 				index++;

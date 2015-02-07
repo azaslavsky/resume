@@ -1,10 +1,14 @@
 var React = require('react');
+var ModelMixin = require('../_mixins/ModelMixin');
+var Dispatcher = require('../../dispatcher');
 var PageSelector = require('./pageSelector');
 
 
 
 //View definition
 module.exports = React.createClass({
+	mixins: [ModelMixin()],
+
 	getInitialState: function() {
 		return {
 			index: 0,
@@ -13,17 +17,27 @@ module.exports = React.createClass({
 	},
 
 	onSelection: function(index) {
-		this.setState({index: index, previous: this.state.index});
+		//Dispatch the event to activate the correct page
+		Dispatcher.dispatch({
+			actionType: 'scroll',
+			page: this.model.get('pages['+ index +'].name'),
+			forceScroll: true
+		});
+	},
+
+	componentWillUpdate: function(){
+		var activePage = this.model.get('pages').findWhere({ active: true });
+		this.state.previous = this.state.index;
+		this.state.index = activePage ? activePage.get('index') : 0;
 	},
 
 	render: function() {
 		//Create the page selectors
 		var diff, animClass = '', indexClass = '';
-		var pages = window.app.model.get('pages').map(function(page) {
-			//https://regex101.com/r/pB7uD7/1
+		var pages = this.model.get('pages').map(function(page) {
 			return (
 				/* jshint ignore:start */
-				<PageSelector icon={page.get('icon')} name={page.get('name')} selected={page.get('index') === this.state.index} index={page.get('index')} onToggleSelect={this.onSelection} />
+				<PageSelector key={page.get('index')} icon={page.get('icon')} name={page.get('name')} selected={!!page.get('active')} index={page.get('index')} onToggleSelect={this.onSelection} />
 				/* jshint ignore:end */
 			);
 		}.bind(this));

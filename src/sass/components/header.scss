@@ -124,11 +124,9 @@
     #TitleScroller
 \*------------------------------------*/
 
-.titleScroller {
-}
-
 .titleScroller__span {
 	@include flex-row();
+	@include transition(transform $animQuick ease-in-out);
 	height: 100%;
 }
 
