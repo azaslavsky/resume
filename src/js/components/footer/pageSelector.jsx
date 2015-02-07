@@ -1,36 +1,30 @@
 var React = require('react');
+var BackboneModelMixin = require('../_mixins/backboneModelMixin');
 
 
 
 //View definition
 module.exports = React.createClass({
-	getInitialState: function() {
-		return {};
-	},
+	mixins: [BackboneModelMixin],
 
 	getDefaultProps: function() {
 		return {
-			selected: false
+			active: false
 		};
 	},
 
 	handleSelectionToggle: function(e) {
-		if (this.props.onToggleSelect) {
-			this.props.onToggleSelect( this.props.index );
-		} else {
-			this.setState({ selected: !this.props.selected });
-		}
+		this.props.onToggleSelect && this.props.onToggleSelect( this.props.index );
 	},
 
 	render: function() {
-		var isSelected = typeof this.state.selected === 'boolean' ? this.state.selected : this.props.selected;
-		var selectedClass = isSelected ? ' footer__selector--selected' : '';
+		var selectedClass = this.model.get('active') ? ' footer__selector--selected' : '';
 
 		return (
 			/* jshint ignore:start */
-			<div className={'footer__selector' + selectedClass} key={this.props.index} name={this.props.name} onClick={this.handleSelectionToggle}>
-				<span className={'footer__icon icon-' + this.props.icon} />
-				<span className="footer__text">{ this.props.name.charAt(0).toUpperCase() + this.props.name.substring(1) }</span>
+			<div className={'footer__selector' + selectedClass} key={this.model.get('index')} name={this.model.get('name')} onClick={this.handleSelectionToggle}>
+				<span className={'footer__icon icon-' + this.model.get('icon')} />
+				<span className="footer__text">{ this.model.get('name').charAt(0).toUpperCase() + this.model.get('name').substring(1) }</span>
 			</div>
 			/* jshint ignore:end */
 		);

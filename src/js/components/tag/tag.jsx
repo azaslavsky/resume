@@ -1,13 +1,15 @@
 var React = require('react');
-var ModelMixin = require('../_mixins/ModelMixin');
+var BackboneModelMixin = require('../_mixins/backboneModelMixin');
+var BackboneEventMixin = require('../_mixins/backboneEventMixin');
 var Dispatcher = require('../../dispatcher');
+
 var Detail = require('../detail/detail');
 
 
 
 //View definition
 var TagView = React.createClass({
-	mixins: [ModelMixin(true)],
+	mixins: [BackboneModelMixin, BackboneEventMixin],
 
 	handleToggleExpand: function(e){
 		//this.setState({expanded: !this.model.get('expanded')});

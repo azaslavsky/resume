@@ -1,14 +1,16 @@
-var React = require('react');
-var ModelMixin = require('../_mixins/ModelMixin');
 var marked = require('marked');
 var _ = require('underscore');
+
+var React = require('react');
+var BackboneModelMixin = require('../_mixins/backboneModelMixin');
+
 var Page = require('../page/page');
 
 
 
 //View definition
 module.exports = React.createClass({
-	mixins: [ModelMixin()],
+	mixins: [BackboneModelMixin],
 
 	componentWillMount: function(){
 		this.model = window.app.model.getPage('about');

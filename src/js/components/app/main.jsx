@@ -1,7 +1,9 @@
 $ = require('jquery');
 
 var React = require('react');
-var ModelMixin = require('../_mixins/ModelMixin');
+var BackboneModelMixin = require('../_mixins/backboneModelMixin');
+var BackboneEventMixin = require('../_mixins/backboneEventMixin');
+var InfoMixin = require('../_mixins/infoMixin');
 var Dispatcher = require('../../dispatcher');
 
 //Load header, content, and footer
@@ -14,7 +16,7 @@ var Footer = require('../footer/footer');
 //Render
 module.exports = function(){
 	var App = React.createClass({
-		mixins: [ModelMixin(true)],
+		mixins: [BackboneModelMixin, BackboneEventMixin, InfoMixin],
 
 		getInitialInfo: function(){
 			return {

@@ -1,5 +1,6 @@
 var React = require('react');
-var ModelMixin = require('../_mixins/ModelMixin');
+var BackboneModelMixin = require('../_mixins/backboneModelMixin');
+var InfoMixin = require('../_mixins/infoMixin');
 var Dispatcher = require('../../dispatcher');
 var PageSelector = require('./pageSelector');
 
@@ -7,9 +8,9 @@ var PageSelector = require('./pageSelector');
 
 //View definition
 module.exports = React.createClass({
-	mixins: [ModelMixin()],
+	mixins: [BackboneModelMixin, InfoMixin],
 
-	getInitialState: function() {
+	getInitialInfo: function() {
 		return {
 			index: 0,
 			previous: 0
@@ -27,8 +28,8 @@ module.exports = React.createClass({
 
 	componentWillUpdate: function(){
 		var activePage = this.model.get('pages').findWhere({ active: true });
-		this.state.previous = this.state.index;
-		this.state.index = activePage ? activePage.get('index') : 0;
+		this.info.previous = this.info.index;
+		this.info.index = activePage ? activePage.get('index') : 0;
 	},
 
 	render: function() {
@@ -37,13 +38,13 @@ module.exports = React.createClass({
 		var pages = this.model.get('pages').map(function(page) {
 			return (
 				/* jshint ignore:start */
-				<PageSelector key={page.get('index')} icon={page.get('icon')} name={page.get('name')} selected={!!page.get('active')} index={page.get('index')} onToggleSelect={this.onSelection} />
+				<PageSelector key={page.get('index')} model={page} icon={page.get('icon')} name={page.get('name')} selected={!!page.get('active')} index={page.get('index')} onToggleSelect={this.onSelection} />
 				/* jshint ignore:end */
 			);
 		}.bind(this));
 
 		//Calculate a class for the transition animation
-		diff = this.state.index - this.state.previous;
+		diff = this.info.index - this.info.previous;
 		if (diff > 0) {
 			animClass = ' footer--anim-right-' + Math.abs(diff).toString();
 		} else if (diff < 0) {
@@ -51,7 +52,7 @@ module.exports = React.createClass({
 		}
 
 		//Set an index class
-		indexClass = ' footer--index-' + this.state.index.toString();
+		indexClass = ' footer--index-' + this.info.index.toString();
 
 		return (
 			/* jshint ignore:start */

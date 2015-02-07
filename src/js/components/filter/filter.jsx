@@ -1,12 +1,12 @@
 var React = require('react');
-var ModelMixin = require('../_mixins/ModelMixin');
+var BackboneModelMixin = require('../_mixins/backboneModelMixin');
 var Dispatcher = require('../../dispatcher');
 
 
 
 //View definition
 module.exports = React.createClass({
-	mixins: [ModelMixin()],
+	mixins: [BackboneModelMixin],
 
 	handleToggleExpand: function(active){
 		Dispatcher.dispatch({

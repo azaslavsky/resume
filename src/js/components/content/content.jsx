@@ -1,5 +1,5 @@
 var React = require('react');
-var ModelMixin = require('../_mixins/ModelMixin');
+var BackboneModelMixin = require('../_mixins/backboneModelMixin');
 
 var About = require('./about');
 var Experience = require('./experience');
@@ -10,7 +10,7 @@ var Projects = require('./projects');
 
 //View definition
 module.exports = React.createClass({
-	mixins: [ModelMixin()],
+	mixins: [BackboneModelMixin],
 
 	//Interface that allows parent components to easily loop through the pages
 	getPages: function() {

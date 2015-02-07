@@ -1,5 +1,6 @@
 var React = require('react');
-var ModelMixin = require('../_mixins/ModelMixin');
+var BackboneModelMixin = require('../_mixins/backboneModelMixin');
+
 //var SearchView = require('../components/search');
 var Avatar = require('./avatar');
 var TitleScroller = require('./titleScroller');
@@ -9,7 +10,7 @@ var ContactList = require('./contactList');
 
 //View definition
 module.exports = React.createClass({
-	mixins: [ModelMixin()],
+	mixins: [BackboneModelMixin],
 
 	getInitialState: function() {
 		return {

@@ -1,5 +1,6 @@
 var React = require('react');
-var ModelMixin = require('../_mixins/ModelMixin');
+var BackboneModelMixin = require('../_mixins/backboneModelMixin');
+var BackboneEventMixin = require('../_mixins/backboneEventMixin');
 
 var Page = require('../page/page');
 var Section = require('../page/section');
@@ -10,7 +11,7 @@ var Tag = require('../tag/tag');
 
 //View definition
 module.exports = React.createClass({
-	mixins: [ModelMixin(true)],
+	mixins: [BackboneModelMixin, BackboneEventMixin],
 
 	componentWillMount: function(){
 		this.model = window.app.model.getPage('skills');

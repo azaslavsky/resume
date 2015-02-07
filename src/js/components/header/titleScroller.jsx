@@ -1,11 +1,11 @@
 var React = require('react');
-var ModelMixin = require('../_mixins/ModelMixin');
+var BackboneModelMixin = require('../_mixins/backboneModelMixin');
 
 
 
 //View definition
 module.exports = React.createClass({
-	mixins: [ModelMixin()],
+	mixins: [BackboneModelMixin],
 
 	render: function() {
 		var activePage = this.model.get('pages').findWhere({ active: true });
