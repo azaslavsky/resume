@@ -6,6 +6,7 @@ var Job = require('./job');
 var Project = require('./project');
 var Skill = require('./tag');
 var Technology = require('./tag');
+var Volunteer = require('./volunteer');
 var Language = require('./base');
 var Interest = require('./base');
 
@@ -19,6 +20,7 @@ module.exports = Backbone.AssociatedModel.extend({
 		projects: [],
 		skills: [],
 		technologies: [],
+		volunteering: [],
 		languages: [],
 		interests: []
 	},
@@ -47,6 +49,10 @@ module.exports = Backbone.AssociatedModel.extend({
 		key: 'technologies',
 		type: Backbone.Many,
 		relatedModel: Technology
+	},{
+		key: 'volunteering',
+		type: Backbone.Many,
+		relatedModel: Volunteer
 	},{
 		key: 'languages',
 		type: Backbone.Many,

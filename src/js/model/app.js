@@ -21,7 +21,7 @@ var pageRefs = {
 	about: ['basics'],
 	experience: ['education', 'work'],
 	skills: ['skills', 'technologies'],
-	projects: ['projects', 'interests', 'languages']
+	projects: ['projects', 'volunteering', 'interests', 'languages']
 };
 
 

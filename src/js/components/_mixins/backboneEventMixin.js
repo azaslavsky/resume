@@ -7,11 +7,11 @@ var _ = require('underscore');
 module.exports = {
 	componentDidMount: function() {
 		this.updateInfo && this.updateInfo();
-		this.model && this.model.on('change', this.doForceUpdate, this);
+		this.model && this.model.on('change sync reset', this.doForceUpdate, this);
 	},
 
 	componentWillUnmount: function() {
-		this.model && this.model.off('change', this.doForceUpdate, this);
+		this.model && this.model.off('change sync reset', this.doForceUpdate, this);
 	},
 
 	doForceUpdate: function(data) {

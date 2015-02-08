@@ -1,6 +1,7 @@
 var Backbone = require('backbone');
 var PageModel = require('./Page');
-var School = require('../resume/project');
+var Project = require('../resume/project');
+var Volunteer = require('../resume/volunteer');
 var Interest = require('../resume/base');
 var Language = require('../resume/base');
 
@@ -11,14 +12,19 @@ module.exports = PageModel.extend({
 		name: 'projects',
 		icon: 'bulb',
 		projects: [],
+		volunteering: [],
 		interests: [],
-		langauges: []
+		languages: []
 	},
 
 	relations: [{
 		key: 'projects',
 		type: Backbone.Many,
-		relatedModel: School
+		relatedModel: Project
+	},{
+		key: 'volunteering',
+		type: Backbone.Many,
+		relatedModel: Volunteer
 	},{
 		key: 'interests',
 		type: Backbone.Many,
