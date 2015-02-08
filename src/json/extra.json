@@ -5,8 +5,8 @@
 			"website": "https://github.com/azaslavsky/backbone-hashMate",
 			"summary": "Like jQuery BBQ, but for Backbone. HashMate extends Backbone.History to store and respond to information contained in the URL's hash fragment. Useful for state management, referral handling, SEO and more.",
 			"highlights": [
-				"Skills: Client-Side Development, API Integration",
-				"Stack: Javascript, Underscore, Backbone"
+				"Skills: Behavior Driven Development, Client-Side Development",
+				"Stack: Backbone, Git, Gulp, Jasmine, Javascript, Karma, Underscore"
 			]
 		},
 		{
@@ -14,17 +14,26 @@
 			"website": "https://github.com/azaslavsky/domJSON",
 			"summary": "Converts DOM trees into compact JSON objects, and vice versa, as fast as possible.",
 			"highlights": [
-				"Skills: Client-Side Development",
-				"Stack: Javascript"
+				"Skills: Client-Side Development, Browser Performance Optimization",
+				"Stack: Git, Gulp, HTML5, CSS3, Javascript"
+			]
+		},
+		{
+			"name": "Resume App",
+			"website": "https://github.com/azaslavsky/resume",
+			"summary": "A little single page web-app for my resume, which you are looking at right now.",
+			"highlights": [
+				"Skills: API Integration, Client-Side Development, User Interfaces, User Experience",
+				"Stack: Backbone, Bourbon, Browserify, CSS3, Flux, Git, Gulp, Javascript, jQuery, React, Underscore"
 			]
 		},
 		{
 			"name": "TextStack",
-			"website": "https://github.com/azaslavsky/TestStack",
+			"website": "https://github.com/azaslavsky/TextStack",
 			"summary": "A simple undo history script for DOM text fields.",
 			"highlights": [
-				"Skills: Client-Side Development",
-				"Stack: Javascript"
+				"Skills: Client-Side Development, User Interfaces",
+				"Stack: Git, Gulp, HTML5, Javascript, jQuery"
 			]
 		},
 	],

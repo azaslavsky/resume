@@ -45,7 +45,7 @@
 		{
 			"institution": "University of California, Berkeley",
 			"area": "Architecture",
-			"studyType": "Bachelor",
+			"studyType": "Bachelor of Arts",
 			"startDate": "2008-08-25",
 			"endDate": "2012-12-20",
 			"gpa": "3.4"
@@ -55,7 +55,7 @@
 		{
 			"company": "Critica",
 			"position": "Co-Founder",
-			"website": "dev-app.critica.io",
+			"website": "http://dev-app.critica.io",
 			"startDate": "2013-11-15",
 			"endDate": "2015-01-15",
 			"summary": "I co-founded Critica, a consumer and education focused discussion app, with two friends in 2013.  I was responsible for the entire user facing portion of the product, including UI/UX design, client-side Javascript, and integration with in-house and third party back-end APIs.",
@@ -65,9 +65,9 @@
 			]
 		},
 		{
-			"company": "Safe Transportation Research and Education Center",
+			"company": "SafeTREC",
 			"position": "Web Developer",
-			"website": "tims.berkeley.edu",
+			"website": "http://tims.berkeley.edu",
 			"startDate": "2010-01-10",
 			"endDate": "2013-12-31",
 			"summary": "At SafeTREC, I was part of the small team that built the TIMS (Transport Injury Mapping System) suite of traffic safety applications. My contributions focused on web design, back end database integration via PHP, and the development of search and query algorithms.",
@@ -145,11 +145,11 @@
 			"keywords": ["downhill", "backcountry"]
 		},
 		{
-			"name": "Rock Climbing",
-			"keywords": ["hiking", "backpacking"]
+			"name": "Hiking",
+			"keywords": ["climbing", "backpacking"]
 		},
 		{
-			"name": "Movies",
+			"name": "Film",
 			"keywords": ["Sci Fi", "Comedy", "Drama"]
 		}
 	]
