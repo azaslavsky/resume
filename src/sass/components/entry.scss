@@ -1,0 +1,62 @@
+@import "bourbon";
+@import "../global/variables";
+
+.entry {
+	margin: 12px 0 0 16px;
+
+	&:first-of-type {
+		margin-top: 12px;
+	}
+}
+
+
+
+
+
+/*------------------------------------*\
+    #Header
+\*------------------------------------*/
+
+.entry__heading {
+	color: $colorWeak;
+}
+
+.entry__heading__major {
+	color: $colorVeryStrong;
+
+	a {
+
+	}
+}
+
+.entry__heading__minor {
+	font: $fontParagraph;
+}
+
+.entry__heading__stats {
+	float: right;
+}
+
+.entry__heading__icon {
+	color: $colorVeryStrong;
+	padding-left: 12px;
+}
+
+.entry__heading__stat {
+	font-weight: 700;
+	padding-left: 6px;
+}
+
+
+
+
+
+/*------------------------------------*\
+    #Content
+\*------------------------------------*/
+
+.entry__content {
+	p:first-child {
+		margin-top: 9px;
+	}
+}

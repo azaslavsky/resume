@@ -1,4 +1,5 @@
 var React = require('react');
+
 var PageHeader = require('./header');
 var PageCopyright = require('./copyright');
 

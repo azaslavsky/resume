@@ -20,7 +20,8 @@ module.exports = function(){
 
 		getInitialInfo: function(){
 			return {
-				ratioVisibleToActivate: 0.5, //The percentage of the next page that needs to be visible before it is "activated"
+				ratioVisibleToActivate: 0.45, //The percentage of the next page that needs to be visible before it is "activated"
+				lastWindowHeight: 0,
 				scrollDuration: 600, //How long the scroll animation lasts
 				scrollMutedUntil: 0 //All scroll listeners are ignored until this timestamp is passed
 			};
@@ -54,7 +55,8 @@ module.exports = function(){
 			if ( new Date().getTime() > this.info.scrollMutedUntil ) {
 				//Iterate over child pages, getting the "top" of each
 				var scrollHeight = document.getElementsByTagName('body')[0].scrollHeight;
-				var cutoff = window.scrollY + Math.round((1 - this.info.ratioVisibleToActivate) * window.innerHeight);
+				var ratioMultiplier = window.scrollY > this.info.lastWindowHeight ? 1 - this.info.ratioVisibleToActivate : this.info.ratioVisibleToActivate;
+				var cutoff = window.scrollY + Math.round(ratioMultiplier * window.innerHeight);
 				var activate = '';
 
 				if (window.scrollY < 0.1 * window.innerHeight) {
@@ -80,6 +82,9 @@ module.exports = function(){
 					page: activate
 				});
 			}
+
+			//Update the window height no matter what
+			this.setInfo({ lastWindowHeight: window.scrollY });
 		},
 
 		//When resizing the window, make a note of its resulting height and the positions of all the pages
@@ -101,7 +106,6 @@ module.exports = function(){
 				};
 			});
 
-			console.log(positionData);
 			this.setInfo(positionData);
 		},
 
@@ -119,8 +123,6 @@ module.exports = function(){
 			if (data && data.forceScroll) {
 				var activePage = this.model.get('pages').findWhere({active: true});
 				var pageOffset = this.info.pages[activePage ? activePage.get('name') : this.model.get('pages[0].name')];
-				//console.log(activePage ? activePage.get('name') : this.model.get('pages[0].name'));
-				//console.log(this.info.pages[activePage ? activePage.get('name') : this.model.get('pages[0].name')].top);
 				$('html, body').animate({ scrollTop: pageOffset.top - 60 });
 			}
 		},

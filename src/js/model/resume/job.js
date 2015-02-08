@@ -11,7 +11,7 @@ module.exports = BaseModel.extend(
 		initialize: function(){
 			this.getKeywords('skills', 'Skills', this.get('highlights'));
 			this.getKeywords('stack', 'Stack', this.get('highlights'));
-			this.parseFragments('company', 'position');
+			this.parseFragments('company', 'position', 'summary');
 		}
 	})
 );

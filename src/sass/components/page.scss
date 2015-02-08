@@ -108,7 +108,7 @@
 	width: $aboutAvatarSize;
 	position: absolute;
 	//top: $topOffset * -1;
-	top: 0;
+	top: -1px;
 	right: 60px;
 
 	/*&:after, &:before {

@@ -103,9 +103,9 @@ p {
 	font: $fontParagraph;
 	line-height: 30px;
 	text-indent: 16px;
-	margin-bottom: 15px;
+	margin-bottom: 6px 0 0 15px;
 
 	&:last-child {
-		margin-bottom: 0
+		margin: 0;
 	}
 }

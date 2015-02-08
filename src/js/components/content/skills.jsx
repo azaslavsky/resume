@@ -13,20 +13,19 @@ var Tag = require('../tag/tag');
 module.exports = React.createClass({
 	mixins: [BackboneModelMixin, BackboneEventMixin],
 
-	componentWillMount: function(){
+	componentWillMount: function() {
 		this.model = window.app.model.getPage('skills');
 	},
 
-	parseCollection: function(model, i){
+	parseCollection: function(model, i) {
 		return (
 			/* jshint ignore:start */
-			<Tag model={model} key={i}>
-			</Tag>
+			<Tag model={model} key={i} />
 			/* jshint ignore:end */
 		);
 	},
 
-	makeFilters: function(model){
+	makeFilters: function(model) {
 		return (
 			/* jshint ignore:start */
 			<Filter defaultText={model.get('text')} model={model} />

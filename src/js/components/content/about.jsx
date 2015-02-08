@@ -12,7 +12,7 @@ var Page = require('../page/page');
 module.exports = React.createClass({
 	mixins: [BackboneModelMixin],
 
-	componentWillMount: function(){
+	componentWillMount: function() {
 		this.model = window.app.model.getPage('about');
 	},
 
