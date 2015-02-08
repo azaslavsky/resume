@@ -4,6 +4,7 @@ var ActionManager = require('./actions');
 
 //A manifest that pairs actionTypes with their respective methods in this instance of ActionManager
 var manifest = {
+	'header-toggle': 'headerToggle',
 	'scroll': 'scroll'
 };
 
@@ -11,6 +12,16 @@ var manifest = {
 
 //All actions are executed in the context of the supplied model, if one is provided
 var GlobalActions = new ActionManager(manifest, {
+	//Toggle the state of the header: contact list open, search open, or everything closed
+	headerToggle: function(data, model) {
+		console.log(data.expand);
+		model.set({
+			contacts: data.expand === 'contacts' ? true : false
+			//search: data.expand === 'search' ? true : false
+		});
+	},
+
+	//Respond to scroll adjustment events
 	scroll: function(data, model) {
 		var renderOptions;
 

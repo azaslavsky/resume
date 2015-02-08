@@ -5,7 +5,6 @@ var Page = require('../page/page');
 var Section = require('../page/section');
 var Project = require('../entry/project');
 var Volunteer = require('../entry/volunteer');
-var Entry = 
 
 
 

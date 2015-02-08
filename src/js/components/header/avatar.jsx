@@ -4,21 +4,12 @@ var React = require('react');
 
 //View definition
 module.exports = React.createClass({
-	getInitialState: function() {
-		return {};
-	},
-
 	handleAvatarToggle: function(e) {
-		if (this.props.onToggleAvatar) {
-			this.props.onToggleAvatar( !this.props.opened );
-		} else {
-			this.setState({ opened: typeof this.state.opened === 'boolean' ? !this.state.opened : !this.props.opened });
-		}
+		this.props.onToggleAvatar && this.props.onToggleAvatar( !this.props.opened );
 	},
 
 	render: function() {
-		var avatarOpened = !(typeof this.state.opened === 'boolean' ? this.state.opened : this.props.opened);
-		var avatarOpenedClass = avatarOpened ? ' avatar--opened' : '';
+		var avatarOpenedClass = this.props.opened ? ' avatar--opened' : '';
 		return (
 			/* jshint ignore:start */
 			<div className={'avatar' + avatarOpenedClass} onClick={this.handleAvatarToggle}>

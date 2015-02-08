@@ -10,6 +10,7 @@ module.exports = React.createClass({
 	render: function() {
 		var activePage = this.model.get('pages').findWhere({ active: true });
 		var activeIndex = activePage ? activePage.get('index') : 0;
+		
 		var pageTitles = this.model.get('pages').map(function(page, i) {
 			var text = i ? page.get('name') : this.model.getCategory('basics').get('name');
 

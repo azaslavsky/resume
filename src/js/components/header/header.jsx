@@ -1,5 +1,7 @@
 var React = require('react');
 var BackboneModelMixin = require('../_mixins/backboneModelMixin');
+var BackboneEventMixin = require('../_mixins/backboneEventMixin');
+var Dispatcher = require('../../dispatcher');
 
 //var SearchView = require('../components/search');
 var Avatar = require('./avatar');
@@ -10,34 +12,30 @@ var ContactList = require('./contactList');
 
 //View definition
 module.exports = React.createClass({
-	mixins: [BackboneModelMixin],
-
-	getInitialState: function() {
-		return {
-			contacts: false,
-			search: false
-		};
-	},
+	mixins: [BackboneModelMixin, BackboneEventMixin],
 
 	handleCloseContacts: function(e) {
-		this.setState({contacts: false});
+		Dispatcher.dispatch({
+			actionType: 'header-toggle',
+			expand: false
+		});
 	},
 
 	onToggleContacts: function(opened) {
-		this.setState({contacts: !!opened, search: false});
-	},
-
-	onToggleSearch: function(opened) {
-		this.setState({contacts: false, search: !!opened});
+		Dispatcher.dispatch({
+			actionType: 'header-toggle',
+			expand: this.model.get('contacts') ? false : 'contacts'
+		});
 	},
 
 	render: function() {
-		var contactsOpened = this.state.contacts ? ' navbar--contacts' : '';
-		var searchOpened = this.state.search ? ' navbar--search' : '';
+		var contactsOpened = this.model.get('contacts') ? ' navbar--contacts' : '';
+		//var searchOpened = this.model.get('search') ? ' navbar--search' : '';
+
 		return (
 			/* jshint ignore:start */
-			<div className={'navbar buffer' + contactsOpened + searchOpened}>
-				<Avatar model={this.model} img={this.model.getPicture()} onToggleAvatar={this.onToggleContacts} opened={this.state.contacts} />
+			<div className={'navbar buffer' + contactsOpened}>
+				<Avatar key='avatar' img={this.model.getPicture()} onToggleAvatar={this.onToggleContacts} opened={this.model.get('contacts')} />
 				<div className="navbar__title flex-row">
 					<div className="navbar__title__contact navbar__title__segment flex-row">
 						<h1 className="navbar__title__heading">Contact Me</h1>

@@ -19,7 +19,7 @@
 			]
 		},
 		{
-			"name": "Resume App",
+			"name": "resume",
 			"website": "https://github.com/azaslavsky/resume",
 			"summary": "A little single page web-app for my resume, which you are looking at right now.",
 			"highlights": [
