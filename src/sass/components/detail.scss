@@ -22,6 +22,11 @@ $bubblePadding: 12px;
 	border-radius: $tagRadius * 2;
 	color: $invertedColorVeryWeak;
 	cursor: default;
+
+	@include responds-to (mobile) {
+		max-width: 320px - ($tabPadding * 4);
+		bottom: 39px;
+	}
 }
 
 
@@ -85,7 +90,7 @@ $bubblePadding: 12px;
 \*------------------------------------*/
 
 .detail__header {
-	@include flex-row();
+	@extend %flex-row;
 	@include justify-content(space-between);
 	@include calc(width, "100% - #{$detailPadding * 1.5}");
 	position: relative;

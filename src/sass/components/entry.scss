@@ -4,6 +4,10 @@
 .entry {
 	margin: 12px 0 0 16px;
 
+	@include responds-to (mobile) {
+		margin: 24px 0 0 $tabPadding;
+	}
+
 	&:first-of-type {
 		margin-top: 12px;
 	}

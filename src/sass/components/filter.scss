@@ -2,8 +2,15 @@
 @import "../global/variables";
 
 .filters {
-	@include position(absolute, -6px 0 null null);
-	@include flex-row();
+	@include position(absolute, 0 0 null null);
+	@extend %flex-row;
+	margin-top: -6px;
+
+	@include responds-to (mobile) {
+		position: relative;
+		display: block;
+		margin-left: 6px;
+	}
 }
 
 .filter {
@@ -22,6 +29,11 @@
 	border-radius: 6px;
 	z-index: 2;
 	cursor: pointer;
+
+	@include responds-to (mobile) {
+		@include justify-content(flex-end);
+		float: none;
+	}
 }
 
 .filter--active {
@@ -39,7 +51,7 @@
 \*------------------------------------*/
 
 .filter__display {
-	@include flex-row();
+	@extend %flex-row;
 	@include justify-content(space-between);
 	padding: 3px 12px;
 }
@@ -55,7 +67,7 @@
 		@include transition(transform $animQuick ease-in-out);
 		transform-origin: 15px 8px;
 	};
-	@include flex-row(inline-flex);
+	@extend %flex-row-inline;
 	position: relative;
 	width: 16px;
 	height: 16px;

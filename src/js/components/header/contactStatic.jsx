@@ -7,7 +7,7 @@ module.exports = React.createClass({
 	render: function() {
 		return (
 			/* jshint ignore:start */
-			<span className="contact-list__line flex-row">
+			<span className="contact-list__line">
 				<span className={'contact-list__icon buffer-icon icon-' + this.props.icon}></span>
 				<span className="contact-list__text">{this.props.children}</span>
 			</span>

@@ -12,7 +12,7 @@
 
 
 .navbar__title {
-	@include flex-row();
+	@extend %flex-row;
 	@include calc(width, "100% - 75px");
 	height: 100%;
 	float: left;
@@ -35,8 +35,12 @@
 	whitespace: nowrap;
 }
 
+.navbar__title__contact {
+	@extend %flex-row-inline;
+}
+
 .navbar__title__heading {
-	@include flex-row();
+	@extend %flex-row;
 	min-height: $bufferInnerHeight;
 }
 
@@ -76,7 +80,7 @@
 \*------------------------------------*/
 
 .avatar {
-	@include flex-row(inline-flex);
+	@extend %flex-row-inline;
 	position: relative;
 	height: 100%;
 	width: 60px;
@@ -101,7 +105,7 @@
 		@include transition(transform $animQuick ease-in-out);
 		transform-origin: 18px 18px;
 	};
-	@include flex-row(inline-flex);
+	@extend %flex-row-inline;
 	position: relative;
 	bottom: 0;
 	left: -5px;
@@ -125,7 +129,7 @@
 \*------------------------------------*/
 
 .titleScroller__span {
-	@include flex-row();
+	@extend %flex-row;
 	@include transition(transform $animQuick ease-in-out);
 	height: 100%;
 }
@@ -139,6 +143,7 @@
 \*------------------------------------*/
 
 .contact-list__line {
+	@extend %flex-row;
 	height: $bufferInnerHeight + $bufferMargin;
 	display: flex;
 	color: $colorStrong;
@@ -146,7 +151,7 @@
 }
 
 .contact-list__icon {
-	@include flex-row();
+	@extend %flex-row;
 	@include flex(0 0 60px);
 	justify-content: flex-end;
 	height: 100%;
@@ -156,9 +161,13 @@
 }
 
 .contact-list__text {
-	@include flex-row();
+	@extend %flex-row;
 	@include flex(2 1);
 	height: 100%;
 	font: $fontStrong;
 	margin-left: 6px;
+
+	@include responds-to (mobile) {
+		font-size: 13px;
+	}
 }

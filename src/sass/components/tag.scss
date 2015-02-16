@@ -5,29 +5,35 @@
 	margin-left: 16px;
 	z-index: 10;
 	position: relative;
+
+	@include responds-to (mobile) {
+		margin-left: 6px;
+	}
 }
 
 
-@mixin tag-selected(){
+@mixin tag-selected($showEllipsis: true){
 	background: $invertedColor;
 	border-color: $invertedColorWeak;
 	color: $invertedColorVeryWeak;
 
-	 .tag__text {
-		@include transition-delay($animQuick);
-		margin: 0 6px 0 4px;
-	}
+	@if $showEllipsis == true {
+		.tag__text {
+			@include transition-delay($animQuick);
+			margin: 0 6px 0 4px;
+		}
 
-	.tag__more {
-		@include transition-delay($animQuick);
-		padding: 1px 1px 0 1px;
-		width: 22px;
+		.tag__more {
+			@include transition-delay($animQuick);
+			padding: 1px 1px 0 1px;
+			width: 22px;
+		}
 	}
 }
 
 
 .tag {
-	@include flex-row(inline-flex);
+	@extend %flex-row-inline;
 	@include transition-property(opacity, color);
 	@include transition-duration($animNormal);
 	@include transition-timing-function(ease-in-out);
@@ -41,19 +47,30 @@
 	border-radius: 6px;
 	cursor: pointer;
 
+	@include responds-to (mobile) {
+		margin: 4px 6px 6px 0;
+	}
+
 	&:hover { //:not(.tag--hidden)
-		@include tag-selected();
+		@include responds-to (widescreen) {
+			@include tag-selected();
+		}
 	}
 }
 
 .tag__text {
 	margin: 0 16px;
 	@include transition(margin $animQuick ease-in-out);
+
+	@include responds-to (mobile) {
+		margin: 0 6px;
+		font-size: 11px;
+	}
 }
 
 .tag__more {
 	@include icon($icon: more);
-	@include flex-row(inline-flex);
+	@extend %flex-row-inline;
 	@include transform(scale(0.75, 1));
 	@include transition-property(width, padding);
 	@include transition-duration($animQuick);
@@ -67,14 +84,23 @@
 	font-size: 20px;
 	margin: 0 2px 0 -4px;
 	color: $invertedColorVeryWeak;
+
+	@include responds-to (mobile) {
+		display: none;
+	}
 }
 
 
 .tag--expanded {
-	@include tag-selected();
-
 	$arrowOffset: 20px;
 	$arrowSize: 16px;
+
+	@include responds-to (widescreen) {
+		@include tag-selected();
+	}
+	@include responds-to (mobile) {
+		@include tag-selected(false);
+	}
 
 	&:before, &:after {
 		@include position(absolute, -1 * $arrowOffset null null 50%);

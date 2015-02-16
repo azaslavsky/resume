@@ -2,8 +2,6 @@
 @import "../global/variables";
 
 .page {
-	@include transition(opacity $animNormal ease-in-out);
-	//@include calc(min-height, "100% - 120px");
 	min-height: 200px;
 	position: relative;
 	margin-bottom: 48px;
@@ -12,6 +10,14 @@
 	border: 1px solid $color;
 	background: white;
 	opacity: 0.6;
+
+	@include responds-to (desktop) {
+		@include transition(opacity $animNormal ease-in-out);
+	}
+
+	@include responds-to (mobile) {
+		padding: 8px 4px 24px 4px;
+	}
 
 	&:first-child {
 		margin-top: 60px;
@@ -36,7 +42,10 @@
 \*------------------------------------*/
 
 .page__header {
-	@include flex-row();
+	@extend %flex-row;
+	@include responds-to (mobile) {
+		margin-top: $tabPadding;
+	}
 }
 
 .page__icon {
@@ -46,17 +55,41 @@
 	height: 40px;
 	margin-left: 4px;
 	color: $colorWeak;
+
+	@include responds-to (mobile) {
+		margin-left: 0;
+		/*position: absolute;
+		font-size: 240px;
+		opacity: 0.06;
+		top: 72px;
+		left: -72px;*/
+		display: none;
+	}
 }
 
 .skills, .projects {
 	.page__icon {
 		font-size: 42px;
 		text-align: center;
+
+		/*@include responds-to (mobile) {
+			font-size: 240px;
+		}*/
+	}
+}
+
+.projects {
+	.page__icon {
+		transform: scale(1.25, 1);
 	}
 }
 
 .page__heading {
 	color: #444;
+
+	@include responds-to (mobile) {
+		margin-left: $tabPadding/2;
+	}
 }
 
 
@@ -69,6 +102,10 @@
 
 .page__content {
 	padding: 0 58px;
+
+	@include responds-to (mobile) {
+		padding: 0 $tabPadding 0 $tabPadding/2;
+	}
 
 	h3 {
 		margin-top: 24px;
@@ -107,29 +144,14 @@
 	height: $aboutAvatarSize;
 	width: $aboutAvatarSize;
 	position: absolute;
-	//top: $topOffset * -1;
 	top: -1px;
 	right: 60px;
 
-	/*&:after, &:before {
-		content: "";
-		width: 0;
-		height: 0;
-		z-index: 2;
-		border-style: solid;
-		border-width: 0 0 $topOffset - 1 $topOffset - 1;
-		border-color: transparent transparent $colorStrong transparent;
-		position: absolute;
-		top: 0;
-		left: -1 * ($topOffset - 1);
+	@include responds-to (mobile) {
+		height: $mobileAboutAvatarSize;
+		width: $mobileAboutAvatarSize;
+		right: $tabPadding;
 	}
-
-	&:before {
-		@include filter(blur(4px));
-		border-width: 0 0 $topOffset $topOffset;
-		border-color: transparent transparent black transparent;
-		z-index: 1;
-	}*/
 }
 
 .page__avatar__img {
@@ -148,6 +170,11 @@
 	width: $aboutAvatarSize + 8px;
 	margin-left: 12px;
 	float: right;
+
+	@include responds-to (mobile) {
+		height: 36px;
+		width: $mobileAboutAvatarSize;
+	}
 }
 
 
@@ -165,4 +192,8 @@
 	position: relative;
 	top: 18px;
 	height: 11px;
+
+	@include responds-to (mobile) {
+		top: 9px;
+	}
 }

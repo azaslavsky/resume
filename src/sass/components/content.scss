@@ -2,6 +2,6 @@
 @import "../global/variables";
 
 .content {
-	@include container(margin, 900px);
+	@extend %container;
 	@include position(absolute, 0 0 0 0);
 }

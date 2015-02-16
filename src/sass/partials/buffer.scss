@@ -3,7 +3,7 @@
 
 //Header and footer bars
 .buffer {
-	@include container(margin, 900px);
+	@extend %container;
 	@include transform(translateZ(10px));
 	position: fixed;
 	z-index: 100;
@@ -30,7 +30,7 @@
 
 .buffer__icon {
 	@include buffer__icon(false);
-	@extend .flex-row;
+	@extend %flex-row;
 	font-size: 36px;
 	line-height: 36px;
 	height: 36px;

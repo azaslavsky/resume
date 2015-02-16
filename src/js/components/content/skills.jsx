@@ -25,10 +25,10 @@ module.exports = React.createClass({
 		);
 	},
 
-	makeFilters: function(model) {
+	makeFilters: function(model, i) {
 		return (
 			/* jshint ignore:start */
-			<Filter defaultText={model.get('text')} model={model} />
+			<Filter defaultText={model.get('text')} model={model} key={i} index={i} />
 			/* jshint ignore:end */
 		);
 	},

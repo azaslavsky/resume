@@ -1,12 +1,16 @@
-//Global files
+//Bourbon and variables
 @import "bourbon";
-@import "global/generic";
 @import "global/variables";
-@import "global/icons";
 
 //Partials and mixins
+@import "partials/media";
+@import "partials/flex";
 @import "partials/container";
 @import "partials/buffer";
+
+//Global files
+@import "global/icons";
+@import "global/generic";
 
 //Top-level Modules
 @import "components/header";

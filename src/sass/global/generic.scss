@@ -19,25 +19,6 @@ html, body {
 
 
 /*------------------------------------*\
-    #Flex Box Types
-\*------------------------------------*/
-
-@mixin flex-row ($type: flex) {
-	@include display($type);
-	@include flex-direction(row);
-	@include justify-content(flex-start);
-	@include align-items(center);
-}
-
-.flex-row {
-	@include flex-row();
-}
-
-
-
-
-
-/*------------------------------------*\
     #Fonts
 \*------------------------------------*/
 
@@ -104,6 +85,10 @@ p {
 	line-height: 30px;
 	text-indent: 16px;
 	margin-bottom: 6px 0 0 15px;
+
+	@include responds-to (mobile) {
+		line-height: 27px;
+	}
 
 	&:last-child {
 		margin: 0;

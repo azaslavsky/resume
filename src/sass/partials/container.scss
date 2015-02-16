@@ -12,3 +12,14 @@
 		width: $size;
 	}
 }
+
+%container {
+	@include responds-to(desktop) {
+		@include container(margin, 900px);
+	}
+	@include responds-to(touchscreen) {
+		width: 100%;
+		margin: 0;
+		padding: 0 $tabPadding;
+	}
+}

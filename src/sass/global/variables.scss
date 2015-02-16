@@ -4,6 +4,26 @@ $sections: 4;
 
 
 
+//Media Breaks
+$mediaMobile: 768px;
+$mediaTablet: 1024px;
+
+
+
+
+//Tablet Sizes
+$tabPadding: 12px;
+
+
+
+
+
+//Mobile Sizes Spec
+$mobileAboutAvatarSize: 100px;
+
+
+
+
 //Colors
 $colorVeryWeak: #ddd;
 $colorWeak: #aaa;
@@ -35,7 +55,7 @@ $fontStrong: 300 15px 'Roboto';
 
 
 
-//Buffer styles
+//Buffers
 $bufferOuterHeight: 44px;
 $bufferInnerHeight: 36px;
 $bufferMargin: 4px;

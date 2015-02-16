@@ -28,6 +28,18 @@ $icons: (
 
 
 
+//Placeholder for icon prefixed classes
+%icon {
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-family: 'Icons';
+}
+
+
+
+
+
 //For adding font icons to elements using CSS pseudo-elements (http://jaydenseric.com/blog/fun-with-sass-and-font-icons)
 @mixin icon($position: before, $icon: false, $styles: true) {
 	@if $position == both {
@@ -42,10 +54,7 @@ $icons: (
 		}
 		@if $styles {
 			//Supportive icon styles required
-			speak: none;
-			font-style: normal;
-			font-weight: normal;
-			font-family: 'Icons';
+			@extend %icon;
 		}
 
 		//Include any extra rules supplied for the pseudo-element

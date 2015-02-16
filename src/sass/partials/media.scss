@@ -1,0 +1,20 @@
+@import "bourbon";
+@import "../global/variables";
+
+@mixin responds-to($media: desktop) {
+	@if $media == desktop {
+		@media only screen and (min-width: $mediaTablet + 1) { @content; }
+	}
+	@else if $media == touchscreen {
+		@media only screen and (max-width: $mediaTablet) { @content; }
+	}
+	@else if $media == tablet {
+		@media only screen and (min-width: $mediaMobile + 1) and (max-width: $mediaTablet) { @content; }
+	}
+	@else if $media == widescreen {
+		@media only screen and (min-width: $mediaMobile + 1) { @content; }
+	}
+	@else if $media == mobile {
+		@media only screen and (max-width: $mediaMobile) { @content; }
+	}
+}

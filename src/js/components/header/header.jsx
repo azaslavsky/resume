@@ -36,8 +36,8 @@ module.exports = React.createClass({
 			/* jshint ignore:start */
 			<div className={'navbar buffer' + contactsOpened}>
 				<Avatar key='avatar' img={this.model.getPicture()} onToggleAvatar={this.onToggleContacts} opened={this.model.get('contacts')} />
-				<div className="navbar__title flex-row">
-					<div className="navbar__title__contact navbar__title__segment flex-row">
+				<div className="navbar__title">
+					<div className="navbar__title__contact navbar__title__segment">
 						<h1 className="navbar__title__heading">Contact Me</h1>
 						<span className="navbar__title__close buffer__icon" onClick={this.handleCloseContacts} />
 					</div>

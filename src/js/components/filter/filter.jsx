@@ -40,7 +40,7 @@ module.exports = React.createClass({
 
 		return (
 			/* jshint ignore:start */
-			<div className={'filter' + activeClass + expandedClass}>
+			<div className={'filter' + activeClass + expandedClass} style={{ zIndex: 100 - this.props.index }}>
 				<div className="filter__display" onClick={this.handleToggleExpand}>
 					<span className="filter__text">{ this.model.get('active') || this.props.defaultText }</span>
 					<span className="filter__arrow" />

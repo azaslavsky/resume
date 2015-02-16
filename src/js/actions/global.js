@@ -14,7 +14,6 @@ var manifest = {
 var GlobalActions = new ActionManager(manifest, {
 	//Toggle the state of the header: contact list open, search open, or everything closed
 	headerToggle: function(data, model) {
-		console.log(data.expand);
 		model.set({
 			contacts: data.expand === 'contacts' ? true : false
 			//search: data.expand === 'search' ? true : false
