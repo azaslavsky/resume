@@ -41,7 +41,7 @@ module.exports = React.createClass({
 
 		return (
 			/* jshint ignore:start */
-			<div className={'detail' + detailOpenedClass}>
+			<div className={'detail' + detailOpenedClass} style={{ marginLeft: this.props.offset || 'auto'}}>
 				<div className="detail__avatar">
 				<img className="detail__img" src={'./img/' + this.imgName(this.model.get('name')) + '.svg'} />
 				</div>

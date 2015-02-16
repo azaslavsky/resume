@@ -8,24 +8,35 @@ $bubbleOffsetX: 0.4;
 $bubbleOffsetY: 0.2;
 $bubblePadding: 12px;
 
+$detailMobileWidth: 260px;
+$detailMobilePadding: 28px;
+$bubbleMobileSize: 44px;
+$bubbleMobileOffsetX: 0.35;
+$bubbleMobileOffsetY: 0.15;
+$bubbleMobilePadding: 6px;
+
 .detail {
 	@include position(absolute, null null 40px null);
 	@include calc (left, "#{-1 * ($detailWidth/2)} + 50%");
 	margin-bottom: 1px;
 	z-index: 0;
-	width: 400px;
+	width: $detailWidth;
 	min-height: 100px;
 	border: 1px solid $invertedColorWeak;
 	background: $invertedColor	;
 	box-shadow: $contentShadow;
 	padding: 10px 0 20x 0;
-	border-radius: $tagRadius * 2;
+	border-radius: $tagRadius;
 	color: $invertedColorVeryWeak;
 	cursor: default;
 
-	@include responds-to (mobile) {
-		max-width: 320px - ($tabPadding * 4);
+	@include responds-to (touchscreen) {
 		bottom: 39px;
+	}
+
+	@include responds-to (mobile) {
+		max-width: $detailMobileWidth;
+		@include calc (left, "#{-1 * ($detailMobileWidth/2)} + 50%");
 	}
 }
 
@@ -44,6 +55,13 @@ $bubblePadding: 12px;
 	left: -1 * $bubbleSize * $bubbleOffsetX;
 	height: $bubbleSize;
 	width: $bubbleSize;
+
+	@include responds-to (mobile) {
+		top: -1 * $bubbleMobileSize * $bubbleMobileOffsetY;
+		left: -1 * $bubbleMobileSize * $bubbleMobileOffsetX;
+		height: $bubbleMobileSize;
+		width: $bubbleMobileSize;
+	}
 }
 
 .detail__avatar:before {
@@ -67,6 +85,13 @@ $bubblePadding: 12px;
 	left: $bubbleSize * $bubbleOffsetX;
 	height: 100%;
 	width: 100%;
+
+	@include responds-to (mobile) {
+		top: $bubbleMobileSize * $bubbleMobileOffsetY;
+		left: $bubbleMobileSize * $bubbleMobileOffsetX;
+		width: 110%;
+		height: 110%;
+	}
 }
 
 .detail__img {
@@ -79,6 +104,13 @@ $bubblePadding: 12px;
 	left: $bubblePadding + 1px;
 	border-radius: 50%;
 	border: 1px solid $extraColor;
+
+	@include responds-to (mobile) {
+		@include calc(width, "100% - #{$bubbleMobilePadding * 2}");
+		@include calc(height, "100% - #{$bubbleMobilePadding * 2}");
+		top: $bubbleMobilePadding + 1px;
+		left: $bubbleMobilePadding + 1px;
+	}
 }
 
 
@@ -97,6 +129,11 @@ $bubblePadding: 12px;
 	z-index: 2;
 	left: $detailPadding;
 	height: $bubbleSize - ($bubblePadding * 2) + 2px;
+
+	@include responds-to (mobile) {
+		@include calc(width, "100% - #{$detailMobilePadding * 1.2}");
+		left: $detailMobilePadding;
+	}
 }
 
 .detail__close {
@@ -126,6 +163,11 @@ $bubblePadding: 12px;
 	position: relative;
 	z-index: 2;
 	left: $detailPadding;
+
+	@include responds-to (mobile) {
+		@include calc(max-width, "100% - #{$detailMobilePadding * 1.2}");
+		left: $detailMobilePadding;
+	}
 }
 
 .detail__cell {
