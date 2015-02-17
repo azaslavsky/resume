@@ -14,6 +14,7 @@ var csso = require('gulp-csso');
 var debug = require('gulp-debug');
 var jshint = require('gulp-jshint');
 var react = require('gulp-react');
+var replace = require('gulp-replace');
 var sass = require('gulp-sass');
 var watch = require('gulp-watch');
 var uglify = require('gulp-uglify');
@@ -99,15 +100,22 @@ gulp.task('dist-js', ['libs', 'bundle'], function(){
 		.pipe(gulp.dest('./dist/bundle'))
 });
 
+//Copy the fonts
+gulp.task('dist-icons', function(){
+	return gulp.src('./src/icons/fonts/**')
+		.pipe(gulp.dest('./dist/bundle/icons'))
+});
+
 //Minify the CSS, and output to the "dist" folder
 gulp.task('dist-css', ['sass'], function(){
 	return gulp.src('./src/bundle/**/*.css')
+		.pipe(replace('../../icons/fonts/icomoon', './bundle/icons/icomoon'))
 		.pipe(csso())
 		.pipe(gulp.dest('./dist/bundle'))
 });
 
 //Minify the HTML, and output to the "dist" folder
-gulp.task('dist', ['dist-json', 'dist-js', 'dist-css'], function(){
+gulp.task('dist', ['dist-json', 'dist-js', 'dist-icons', 'dist-css'], function(){
 	return gulp.src('./src/index.html')
 		.pipe(gulp.dest('./dist'))
 });
