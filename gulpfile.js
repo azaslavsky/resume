@@ -60,12 +60,13 @@ gulp.task('bundle', ['lint'], function(){
 			extensions: ['.jsx'],
 			bundleExternal: args.dist,
 			external: args.dist ? false : [
-				'jquery',
-				'underscore',
 				'backbone',
 				'backbone-associations',
 				'marked',
-				'react'
+				'react',
+				'reqwest',
+				'underscore',
+				'velocity',
 			]
 		})).on('error', handleError)
 		.pipe(gulp.dest('./src/output'))

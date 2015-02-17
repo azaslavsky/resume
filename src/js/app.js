@@ -1,11 +1,11 @@
-var jQuery = require('jquery')(window);
 var underscore = require('underscore');
 var Backbone = require('backbone');
 var React = require('react');
+var reqwest = require('reqwest');
 
 //Set options for our global libraries, and load single use plugins
 require('backbone-associations');
-Backbone.$ = $;
+Backbone.ajax = reqwest.compat;
 marked.setOptions({
 	gfm: true,
 	breaks: true
@@ -30,7 +30,16 @@ var copy = require('../json/copy');
 
 
 
-//Load the stylesheet
+//Load the fonts
+var fonts = document.createElement('link');
+fonts.rel = 'stylesheet';
+fonts.type = 'text/css';
+fonts.href = 'https://fonts.googleapis.com/css?family=Roboto:100,300,300italic,700';
+document.head.appendChild(fonts);
+
+
+
+//Load the stylesheets
 var style = document.createElement('link');
 style.rel = 'stylesheet';
 style.type = 'text/css';

@@ -1,4 +1,4 @@
-$ = require('jquery');
+var Velocity = require('velocity');
 
 var React = require('react');
 var BackboneModelMixin = require('../_mixins/backboneModelMixin');
@@ -123,7 +123,7 @@ module.exports = function(){
 			if (data && data.forceScroll) {
 				var activePage = this.model.get('pages').findWhere({active: true});
 				var pageOffset = this.info.pages[activePage ? activePage.get('name') : this.model.get('pages[0].name')];
-				$('html, body').animate({ scrollTop: pageOffset.top - 60 });
+				$(document.getElementsByTagName('html')[0]).velocity('stop').velocity('scroll', {duration: 800, offset: pageOffset.top - 60});
 			}
 		},
 
