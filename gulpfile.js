@@ -109,7 +109,7 @@ gulp.task('dist-icons', function(){
 //Minify the CSS, and output to the "dist" folder
 gulp.task('dist-css', ['sass'], function(){
 	return gulp.src('./src/bundle/**/*.css')
-		.pipe(replace('../../icons/fonts/icomoon', './bundle/icons/icomoon'))
+		.pipe(replace('../../icons/fonts/icomoon', './icons/icomoon'))
 		.pipe(csso())
 		.pipe(gulp.dest('./dist/bundle'))
 });
