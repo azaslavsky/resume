@@ -5,8 +5,8 @@
 			"website": "https://github.com/azaslavsky/backbone-hashMate",
 			"summary": "Like jQuery BBQ, but for Backbone. HashMate extends Backbone.History to store and respond to information contained in the URL's hash fragment. Useful for state management, referral handling, SEO and more.",
 			"highlights": [
-				"Skills: Client-Side Development, API Integration",
-				"Stack: Javascript, Underscore, Backbone"
+				"Skills: Behavior Driven Development, Client-Side Development",
+				"Stack: Backbone, Git, Gulp, Jasmine, Javascript, Karma, Underscore"
 			]
 		},
 		{
@@ -14,224 +14,238 @@
 			"website": "https://github.com/azaslavsky/domJSON",
 			"summary": "Converts DOM trees into compact JSON objects, and vice versa, as fast as possible.",
 			"highlights": [
-				"Skills: Client-Side Development",
-				"Stack: Javascript"
+				"Skills: Client-Side Development, Browser Performance Optimization",
+				"Stack: Git, Gulp, HTML5, CSS3, Javascript"
+			]
+		},
+		{
+			"name": "resume",
+			"website": "https://github.com/azaslavsky/resume",
+			"summary": "A little single page web-app for my resume, which you are looking at right now.",
+			"highlights": [
+				"Skills: API Integration, Client-Side Development, User Interfaces, User Experience",
+				"Stack: Backbone, Bourbon, Browserify, CSS3, Flux, Git, Gulp, Javascript, jQuery, React, Underscore"
 			]
 		},
 		{
 			"name": "TextStack",
-			"website": "https://github.com/azaslavsky/TestStack",
+			"website": "https://github.com/azaslavsky/TextStack",
 			"summary": "A simple undo history script for DOM text fields.",
 			"highlights": [
-				"Skills: Client-Side Development",
-				"Stack: Javascript"
+				"Skills: Client-Side Development, User Interfaces",
+				"Stack: Git, Gulp, HTML5, Javascript, jQuery"
 			]
 		},
 	],
 	"technologies": [
 		{
-			"name": "HTML5",
-			"aliases": ["HTML"],
-			"categories": ["standard"],
-			"level": "Excellent"
-		},
-		{
 			"name": "Backbone",
 			"aliases": ["ExoSkeleton"],
-			"categories": ["library"],
+			"categories": ["Front End", "Libraries"],
 			"level": "Excellent"
 		},
 		{
 			"name": "BenchmarkJS",
 			"aliases": ["Benchmark"],
-			"categories": ["testing"],
+			"categories": ["Testing"],
 			"level": "Familiar"
 		},
 		{
 			"name": "Bootstrap",
-			"categories": ["library"],
+			"categories": ["Front End", "Libraries"],
+			"level": "Proficient"
+		},
+		{
+			"name": "Bourbon",
+			"categories": ["Design", "Front End", "Libraries", "Productiviy Tools"],
 			"level": "Excellent"
 		},
 		{
 			"name": "Bower",
-			"categories": ["tool"],
+			"categories": ["Front End", "Productiviy Tools"],
 			"level": "Excellent"
 		},
 		{
 			"name": "Browserify",
-			"categories": ["library"],
+			"categories": ["Front End", "Libraries"],
 			"level": "Proficient"
 		},
 		{
-			"name": "Chrome Extensions",
-			"categories": ["standard"],
+			"name": "Chrome Extensions API",
+			"categories": ["Front End", "Languages/Standards"],
 			"level": "Excellent"
 		},
 		{
 			"name": "Compass",
-			"categories": ["design", "library", "tool"],
+			"categories": ["Design", "Front End", "Libraries", "Productiviy Tools"],
 			"level": "Proficient"
 		},
 		{
 			"name": "CSS3",
 			"aliases": ["CSS"],
-			"categories": ["design", "standard"],
+			"categories": ["Design", "Front End", "Languages/Standards"],
 			"level": "Excellent"
 		},
 		{
 			"name": "ES6",
 			"aliases": ["ECMAScript 6"],
-			"categories": ["standard"],
+			"categories": ["Languages/Standards"],
 			"level": "Proficient"
 		},
 		{
 			"name": "Flux",
-			"categories": ["library"],
+			"categories": ["Front End", "Libraries"],
 			"level": "Familiar"
 		},
 		{
 			"name": "Google Maps",
 			"aliases": ["GMaps", "Google Maps V3", "GMaps V3"],
-			"categories": ["library"],
+			"categories": ["Front End", "Libraries"],
 			"level": "Excellent"
 		},
 		{
 			"name": "Git",
-			"categories": ["tool"],
+			"categories": ["Productiviy Tools"],
 			"level": "Proficient"
 		},
 		{
 			"name": "Gulp",
-			"categories": ["tool"],
+			"categories": ["Productiviy Tools"],
 			"level": "Excellent"
 		},
 		{
 			"name": "Handlebars",
-			"categories": ["library"],
+			"categories": ["Front End", "Libraries"],
 			"level": "Proficient"
+		},
+		{
+			"name": "HTML5",
+			"aliases": ["HTML"],
+			"categories": ["Front End", "Languages/Standards"],
+			"level": "Excellent"
 		},
 		{
 			"name": "Illustrator",
 			"aliases": ["Adboce Illustrator"],
-			"categories": ["design"],
+			"categories": ["Design", "Front End"],
 			"level": "Excellent"
 		},
 		{
 			"name": "Jasmine",
-			"categories": ["library", "testing"],
+			"categories": ["Libraries", "Testing"],
 			"level": "Excellent"
 		},
 		{
 			"name": "Javascript",
 			"aliases": ["JS"],
-			"categories": ["standard"],
+			"categories": ["Languages/Standards"],
 			"level": "Excellent"
 		},
 		{
 			"name": "jQuery",
 			"aliases": ["Zepto"],
-			"categories": ["library"],
+			"categories": ["Front End", "Libraries"],
 			"level": "Excellent"
 		},
 		{
 			"name": "Karma",
 			"aliases": ["Karma Runner"],
-			"categories": ["testing", "tool"],
+			"categories": ["Testing", "Productiviy Tools"],
 			"level": "Proficient"
 		},
 		{
 			"name": "Leaflet",
-			"categories": ["library"],
+			"categories": ["Front End", "Libraries"],
 			"level": "Familiar"
 		},
 		{
 			"name": "Marionette",
-			"categories": ["library"],
+			"categories": ["Front End", "Libraries"],
 			"level": "Excellent"
 		},
 		{
 			"name": "Mixpanel",
 			"aliases": ["Analytics"],
-			"categories": ["library"],
+			"categories": ["Front End", "Libraries"],
 			"level": "Proficient"
 		},
 		{
 			"name": "Mocha",
-			"categories": ["library", "testing"],
+			"categories": ["Libraries", "Testing"],
 			"level": "Familiar"
 		},
 		{
 			"name": "Modernizr",
-			"categories": ["library"],
+			"categories": ["Front End", "Libraries"],
 			"level": "Excellent"
 		},
 		{
 			"name": "mySQL",
 			"aliases": ["SQL"],
-			"categories": ["standard"],
+			"categories": ["Back End", "Languages/Standards"],
 			"level": "Proficient"
 		},
 		{
 			"name": "Nightwatch",
-			"categories": ["library", "testing"],
+			"categories": ["Front End", "Libraries", "Testing"],
 			"level": "Familiar"
 		},
 		{
 			"name": "Node.js",
 			"aliases": ["Node"],
-			"categories": ["backend"],
+			"categories": ["Back End", "Languages/Standards"],
 			"level": "Familiar"
 		},
 		{
 			"name": "Photoshop",
 			"aliases": ["Adobe Photoshop"],
-			"categories": ["design"],
+			"categories": ["Design", "Front End"],
 			"level": "Proficient"
 		},
 		{
 			"name": "PHP5",
 			"aliases": ["PHP"],
-			"categories": ["backend"],
+			"categories": ["Back End", "Languages/Standards"],
 			"level": "Familiar"
 		},
 		{
 			"name": "React",
-			"categories": ["library"],
+			"categories": ["Front End", "Libraries"],
 			"level": "Familiar"
 		},
 		{
 			"name": "REST",
 			"aliases": ["RESTful", "REST API", "RESTful API"],
-			"categories": ["standard"],
+			"categories": ["Languages/Standards"],
 			"level": "Proficient"
 		},
 		{
 			"name": "RequireJS",
-			"categories": ["library"],
+			"categories": ["Front End", "Libraries"],
 			"level": "Excellent"
 		},
 		{
 			"name": "SASS",
 			"aliases": ["SCSS", "CSS Preprocessor"],
-			"categories": ["design", "library", "tool"],
+			"categories": ["Design", "Front End", "Libraries", "Productiviy Tools"],
 			"level": "Excellent"
 		},
 		{
 			"name": "Selenium",
 			"aliases": ["WebDriver"],
-			"categories": ["testing"],
+			"categories": ["Front End", "Testing"],
 			"level": "Proficient"
 		},
 		{
 			"name": "Underscore",
 			"aliases": ["loDash"],
-			"categories": ["library"],
+			"categories": ["Libraries"],
 			"level": "Excellent"
 		},
 		{
 			"name": "Web Components",
 			"aliases": ["Polymer"],
-			"categories": ["standard"],
+			"categories": ["Front End", "Languages/Standards"],
 			"level": "Familiar"
 		}
 	]

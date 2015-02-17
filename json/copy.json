@@ -1,44 +1,52 @@
-[
-	{
-		"index": 0,
-		"name": "about",
-		"title": "Hi, I'm Alex!",
-		"img": "",
-		"description": "",
-		"extra": [
-			{
-				"type": "p",
-				"heading": "About This App",
-				"content": "",
-			},
-			{
-				"type": "p",
-				"heading": "In Other Formats",
-				"content": "",
-			},
-			{
-				"type": "p",
-				"heading": "Get In Touch",
-				"content": "",
-			},
-		]
-	},
-	{
-		"index": 1,
-		"name": "experience",
-		"title": "Experience",
-		"description": ""
-	},
-	{
-		"index": 2,
-		"name": "projects",
-		"title": "Projects",
-		"description": ""
-	},
-	{
-		"index": 3,
-		"name": "skills",
-		"title": "Skills",
-		"description": ""
-	}
-]
+{
+	"pages": [
+		{
+			"index": 0,
+			"name": "about",
+			"title": "Hi, I'm Alex!",
+			"body": [
+				{
+					"type": "h3",
+					"content": "About This App",
+				},
+				{
+					"type": "p",
+					"content": "This app was created to serve as an interactive resume, and to act as a living sample of my design and coding abilities.  The app is based on my extended version of the [JSON Resume protocol](https://jsonresume.org/schema/).  It uses SASS and Bourbon for CSS preprocessing, and the following 3rd-party Javascript libraries: Browserify, reqwest, marked, Velocity.js, Underscore, Backbone, Backbone-Associations, React, and Flux.  It also uses a few Javascript modules I wrote myself: [searchGuesser](https://github.com/azaslavsky/searchGuesser), [sneakyBars](https://github.com/azaslavsky/sneakyBars), and [backbone-hashMate](https://github.com/azaslavsky/backbone-hashMate)."
+				},
+				{
+					"type": "h3",
+					"content": "Other Formats",
+				},
+				{
+					"type": "p",
+					"content": "A truncated, more \"traditional\" version of my resume may be accessed in several other formats.  It can be [viewed online](https://represent.io/alexzaslavsky) or as a [PDF](https://represent.io/alexzaslavsky.pdf). It is also registered as a [JSON Resume](http://registry.jsonresume.org/alexzaslavsky).  Finally, the entire JSON set from which this app is populated is available in the [Github repository](https://github.com/azaslavsky/resume/tree/master/json).",
+				},
+				{
+					"type": "h3",
+					"content": "Get In Touch",
+				},
+				{
+					"type": "p",
+					"content": "I'm easy to find online, so feel free to get in touch via any one of the mediums [listed here](#page=about&contact).",
+				}
+			]
+		},
+		{
+			"index": 1,
+			"name": "experience",
+			"title": "Professional Background"
+		},
+		{
+			"index": 2,
+			"name": "skills",
+			"title": "Skills",
+			"levels": ["Familiar", "Proficient", "Excellent"]
+		},
+		{
+			"index": 3,
+			"name": "projects",
+			"title": "Other Projects & Interests"
+		}
+	],
+	"images": ""
+}

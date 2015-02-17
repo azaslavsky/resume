@@ -17,32 +17,35 @@
 			{
 				"network": "LinkedIn",
 				"username": "Alex Zaslavsky",
-				"url": "www.linkedin.com/in/ayzaslavsky"
+				"url": "https://www.linkedin.com/in/ayzaslavsky"
 			},
 			{
 				"network": "Twitter",
 				"username": "alex__zaslavsky",
 				"url": "https://twitter.com/alex__zaslavsky"
-			},{
+			},
+			{
 				"network": "Github",
 				"username": "azaslavsky",
 				"url": "https://github.com/azaslavsky"
-			},{
+			},
+			{
 				"network": "StackOverflow",
 				"username": "AlexZ",
-				"url": "http://stackoverflow.com/users/2230156/alexz"
-			},{
+				"url": "http://stackoverflow.com/users/2230156"
+			},
+			{
 				"network": "Codepen",
 				"username": "azaslavsky",
-				"url": "http://codepen.io/azaslavsky/"
+				"url": "http://codepen.io/azaslavsky"
 			}
 		]
 	},
 	"education": [
 		{
-			"institution": "University of California, Berkeley",
+			"institution": "UC Berkeley",
 			"area": "Architecture",
-			"studyType": "Bachelor",
+			"studyType": "B.A.",
 			"startDate": "2008-08-25",
 			"endDate": "2012-12-20",
 			"gpa": "3.4"
@@ -52,25 +55,23 @@
 		{
 			"company": "Critica",
 			"position": "Co-Founder",
-			"website": "app.critica.io",
+			"website": "http://dev-app.critica.io",
 			"startDate": "2013-11-15",
 			"endDate": "2015-01-15",
 			"summary": "I co-founded Critica, a consumer and education focused discussion app, with two friends in 2013.  I was responsible for the entire user facing portion of the product, including UI/UX design, client-side Javascript, and integration with in-house and third party back-end APIs.",
 			"highlights": [
-				"Website: app.critica.io",
 				"Skills: Client-Side Development, UI, UX, Design, API Integration",
 				"Stack: Git, HTML5, CSS3, Javascript, RequireJS, jQuery, Underscore, Backbone, Marionette, Handlebars, Modernizr, Node.js, Gulp, & Chrome Extensions"
 			]
 		},
 		{
-			"company": "Safe Transportation Research and Education Center",
+			"company": "SafeTREC",
 			"position": "Web Developer",
-			"website": "tims.berkeley.edu",
+			"website": "http://tims.berkeley.edu",
 			"startDate": "2010-01-10",
 			"endDate": "2013-12-31",
 			"summary": "At SafeTREC, I was part of the small team that built the TIMS (Transport Injury Mapping System) suite of traffic safety applications. My contributions focused on web design, back end database integration via PHP, and the development of search and query algorithms.",
 			"highlights": [
-				"Website: tims.berkeley.edu",
 				"Skills: Client-Side Development, Server-Side Development, UI, UX, Design, API Integration, SQL Databases",
 				"Stack: Git, PHP5, CSS3, HTML5, Javascript, jQuery, Google Maps, & Leaflet"
 			]
@@ -95,7 +96,7 @@
 		},
 		{
 			"name": "Back-End Development",
-			"level": "Proficient",
+			"level": "Familiar",
 			"keywords": ["PHP5", "Node.js", "REST"],
 			"aliases": ["Server-Side Development"]
 		},
@@ -144,11 +145,11 @@
 			"keywords": ["downhill", "backcountry"]
 		},
 		{
-			"name": "Rock Climbing",
-			"keywords": ["hiking", "backpacking"]
+			"name": "Hiking",
+			"keywords": ["climbing", "backpacking"]
 		},
 		{
-			"name": "Movies",
+			"name": "Film",
 			"keywords": ["Sci Fi", "Comedy", "Drama"]
 		}
 	]

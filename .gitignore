@@ -2,7 +2,7 @@
 src/autocorrect.js
 bower_components/
 node_modules/
-output/
+src/bundle/
 icomoon.zip
 icons/demo-files/
 src/icons/demo.html

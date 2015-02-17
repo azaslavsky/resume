@@ -7,12 +7,16 @@ var args = require('yargs').argv;
 
 //Get all the other modules necessary to build this out
 var bourbon = require('node-bourbon');
+var bowerMain = require('main-bower-files');
 var browserify = require('gulp-browserify');
+var concat = require('gulp-concat');
+var csso = require('gulp-csso');
 var debug = require('gulp-debug');
 var jshint = require('gulp-jshint');
 var react = require('gulp-react');
 var sass = require('gulp-sass');
 var watch = require('gulp-watch');
+var uglify = require('gulp-uglify');
 
 
 
@@ -32,7 +36,7 @@ gulp.task('sass', function(){
 		.pipe(sass({
 			includePaths: bourbon.includePaths
 		})).on('error', handleError)
-		.pipe(gulp.dest('./src/output'))
+		.pipe(gulp.dest('./src/bundle'))
 });
 
 
@@ -40,13 +44,21 @@ gulp.task('sass', function(){
 //Lint the JS
 gulp.task('lint', function () {
 	return gulp.src(['./src/js/**/*(*.jsx|*.js)'])
-		//.pipe(react())
 		.pipe(jshint({
 			expr: true
 		})).on('error', handleError)
 		.pipe(jshint.reporter('default'))
 		.pipe(jshint.reporter('fail'));
-})
+});
+
+
+
+//Bundle and minify the libraries
+gulp.task('libs', function(){
+	return gulp.src(bowerMain({}))
+		.pipe(concat('libs.js'))
+		.pipe(gulp.dest('./src/bundle'))
+});
 
 
 
@@ -69,13 +81,35 @@ gulp.task('bundle', ['lint'], function(){
 				'velocity',
 			]
 		})).on('error', handleError)
-		.pipe(gulp.dest('./src/output'))
+		.pipe(gulp.dest('./src/bundle'))
 });
 
 
 
-//Make a distributable
-gulp.task('dist', ['bundle'], function(){
+//Export JSON
+gulp.task('dist-json', function(){
+	return gulp.src('./src/json/**')
+		.pipe(gulp.dest('./json/'))
+});
+
+//Minify the JS, and output to the "dist" folder
+gulp.task('dist-js', ['libs', 'bundle'], function(){
+	return gulp.src('./src/bundle/**/*.js')
+		.pipe(uglify())
+		.pipe(gulp.dest('./dist/bundle'))
+});
+
+//Minify the CSS, and output to the "dist" folder
+gulp.task('dist-css', ['sass'], function(){
+	return gulp.src('./src/bundle/**/*.css')
+		.pipe(csso())
+		.pipe(gulp.dest('./dist/bundle'))
+});
+
+//Minify the HTML, and output to the "dist" folder
+gulp.task('dist', ['dist-json', 'dist-js', 'dist-css'], function(){
+	return gulp.src('./src/index.html')
+		.pipe(gulp.dest('./dist'))
 });
 
 

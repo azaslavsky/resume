@@ -43,7 +43,7 @@ document.head.appendChild(fonts);
 var style = document.createElement('link');
 style.rel = 'stylesheet';
 style.type = 'text/css';
-style.href = './output/style.css';
+style.href = './bundle/style.css';
 document.head.appendChild(style);
 
 
