@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="512px" height="512px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+<g>
+	<g>
+		<polygon fill="#34439B" points="142.684,257 104.58,323 142.684,389 180.787,323 		"/>
+		<polygon fill="#4655A5" points="371.315,125 333.21,191 371.315,257 409.42,191 		"/>
+		<polygon fill="#7B86C2" points="409.42,191 295.103,389 371.315,389 447.523,257 		"/>
+		<polygon fill="#EF4681" points="295.103,125 142.684,389 218.896,389 371.315,125 		"/>
+		<polygon fill="#5A6BB2" points="142.684,125 66.474,257 104.58,323 218.896,125 		"/>
+		<polygon fill="#FFFFFF" fill-opacity="0.2" points="295.103,125 333.21,191 371.315,125 		"/>
+		<polygon fill="#FFFFFF" fill-opacity="0.1" points="257,191 295.103,125 333.21,191 		"/>
+		<polygon fill="#FFFFFF" fill-opacity="0" points="257,191 295.103,257 333.21,191 		"/>
+		<polygon fill="#010101" fill-opacity="0.1" points="218.896,257 257,191 295.103,257 		"/>
+		<polygon fill="#010101" fill-opacity="0.2" points="218.896,257 257,323 295.103,257 		"/>
+		<polygon fill="#010101" fill-opacity="0.3" points="180.789,323 218.896,257 257,323 		"/>
+		<polygon fill="#010101" fill-opacity="0.4" points="180.789,323 218.896,389 257,323 		"/>
+		<polygon fill="#010101" fill-opacity="0.5" points="142.684,389 180.789,323 218.896,389 		"/>
+		<polygon fill="#FFFFFF" fill-opacity="0.2" points="142.684,125 180.789,191 218.896,125 		"/>
+		<polygon fill="#FFFFFF" fill-opacity="0.1" points="104.58,191 142.684,125 180.789,191 		"/>
+		<polygon fill="#FFFFFF" fill-opacity="0" points="104.58,191 142.684,257 180.789,191 		"/>
+		<polygon fill="#010101" fill-opacity="0.1" points="66.475,257 104.58,191 142.684,257 		"/>
+		<polygon fill="#010101" fill-opacity="0.2" points="66.475,257 104.58,323 142.684,257 		"/>
+		<polygon fill="#FFFFFF" fill-opacity="0" points="180.789,323 142.684,257 104.58,323 		"/>
+		<polygon fill="#010101" fill-opacity="0.2" points="180.789,323 142.684,389 104.58,323 		"/>
+		<polygon fill="#010101" fill-opacity="0.2" points="409.42,191 371.315,125 333.21,191 		"/>
+		<polygon fill="#FFFFFF" fill-opacity="0" points="409.42,191 371.315,257 333.21,191 		"/>
+		<g>
+			<polygon fill="#FFFFFF" fill-opacity="0.2" points="371.315,257 409.42,191 447.523,257 			"/>
+			<polygon fill="#FFFFFF" fill-opacity="0.1" points="371.315,257 409.42,323 447.523,257 			"/>
+			<polygon fill="#FFFFFF" fill-opacity="0" points="333.21,323 371.315,257 409.42,323 			"/>
+			<polygon fill="#010101" fill-opacity="0.1" points="333.21,323 371.315,389 409.42,323 			"/>
+			<polygon fill="#010101" fill-opacity="0.2" points="295.103,389 333.21,323 371.315,389 			"/>
+		</g>
+	</g>
+	<rect x="65" y="65" fill="none" width="384" height="384"/>
+</g>
+</svg>
