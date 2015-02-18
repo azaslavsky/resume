@@ -106,6 +106,12 @@ gulp.task('dist-icons', function(){
 		.pipe(gulp.dest('./dist/bundle/icons'))
 });
 
+//Copy the images
+gulp.task('dist-img', function(){
+	return gulp.src('./src/img/**')
+		.pipe(gulp.dest('./dist/img'))
+});
+
 //Minify the CSS, and output to the "dist" folder
 gulp.task('dist-css', ['sass'], function(){
 	return gulp.src('./src/bundle/**/*.css')
@@ -115,7 +121,7 @@ gulp.task('dist-css', ['sass'], function(){
 });
 
 //Minify the HTML, and output to the "dist" folder
-gulp.task('dist', ['dist-json', 'dist-js', 'dist-icons', 'dist-css'], function(){
+gulp.task('dist', ['dist-img', 'dist-json', 'dist-js', 'dist-icons', 'dist-css'], function(){
 	return gulp.src('./src/index.html')
 		.pipe(gulp.dest('./dist'))
 });
